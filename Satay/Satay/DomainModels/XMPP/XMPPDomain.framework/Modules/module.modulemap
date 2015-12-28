@@ -1,0 +1,6 @@
+framework module XMPPDomain {
+  umbrella header "XMPPDomain.h"
+
+  export *
+  module * { export * }
+}

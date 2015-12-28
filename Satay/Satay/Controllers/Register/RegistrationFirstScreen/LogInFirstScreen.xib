@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LogInFirstScreen">
+            <connections>
+                <outlet property="btnGetStarted" destination="qXO-Ce-JWQ" id="R0H-xP-yDw"/>
+                <outlet property="btnLogIn" destination="39e-Gd-wMT" id="zNS-J9-66u"/>
+                <outlet property="imageView" destination="mFZ-dM-znt" id="oWs-uU-g9V"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mFZ-dM-znt">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <view contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8xD-9E-edv">
+                    <rect key="frame" x="64" y="534" width="193" height="26"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have an account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KkZ-h4-9MV">
+                            <rect key="frame" x="8" y="4" width="125" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.40784313725490196" green="0.40784313725490196" blue="0.40784313725490196" alpha="1" colorSpace="deviceRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39e-Gd-wMT">
+                            <rect key="frame" x="141" y="-2" width="44" height="30"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="Log In">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="login:" destination="-1" eventType="touchUpInside" id="5I0-5W-iWr"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="39e-Gd-wMT" firstAttribute="leading" secondItem="KkZ-h4-9MV" secondAttribute="trailing" constant="8" id="7Uq-h3-V6t"/>
+                        <constraint firstItem="KkZ-h4-9MV" firstAttribute="top" secondItem="8xD-9E-edv" secondAttribute="top" constant="4" id="Hbg-Wi-hEc"/>
+                        <constraint firstAttribute="trailing" secondItem="39e-Gd-wMT" secondAttribute="trailing" constant="8" id="S9r-VL-Ym7"/>
+                        <constraint firstItem="KkZ-h4-9MV" firstAttribute="leading" secondItem="8xD-9E-edv" secondAttribute="leading" constant="8" id="SuI-dh-Dy5"/>
+                        <constraint firstAttribute="bottom" secondItem="KkZ-h4-9MV" secondAttribute="bottom" constant="4" id="fg5-fT-KfX"/>
+                        <constraint firstItem="39e-Gd-wMT" firstAttribute="baseline" secondItem="KkZ-h4-9MV" secondAttribute="baseline" id="qD0-kz-8O1"/>
+                        <constraint firstItem="39e-Gd-wMT" firstAttribute="centerY" secondItem="KkZ-h4-9MV" secondAttribute="centerY" id="qo9-7x-Lpm"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXO-Ce-JWQ">
+                    <rect key="frame" x="100" y="486" width="120" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="qXO-Ce-JWQ" secondAttribute="height" multiplier="3:1" id="1Tf-nh-Mp9"/>
+                        <constraint firstAttribute="width" constant="120" id="OBw-pV-73c"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Sign Up" backgroundImage="button_bg_000.png">
+                        <color key="titleColor" red="0.95294117647058818" green="0.69411764705882351" blue="0.16078431372549018" alpha="1" colorSpace="deviceRGB"/>
+                    </state>
+                    <state key="selected" backgroundImage="button_background_878787.png"/>
+                    <state key="highlighted" backgroundImage="button_background_878787.png"/>
+                    <connections>
+                        <action selector="getStarted" destination="-1" eventType="touchUpInside" id="3Cs-jI-PXz"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="8xD-9E-edv" secondAttribute="centerX" id="2Jc-8z-exC"/>
+                <constraint firstAttribute="trailing" secondItem="mFZ-dM-znt" secondAttribute="trailing" id="ACn-S3-fC8"/>
+                <constraint firstAttribute="centerX" secondItem="qXO-Ce-JWQ" secondAttribute="centerX" id="B1W-kg-2Hd"/>
+                <constraint firstItem="8xD-9E-edv" firstAttribute="top" secondItem="qXO-Ce-JWQ" secondAttribute="bottom" constant="8" id="JYK-eH-AW6"/>
+                <constraint firstAttribute="bottom" secondItem="mFZ-dM-znt" secondAttribute="bottom" id="aTk-XQ-jIF"/>
+                <constraint firstItem="mFZ-dM-znt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dDw-EE-Qs6"/>
+                <constraint firstAttribute="bottom" secondItem="8xD-9E-edv" secondAttribute="bottom" constant="8" id="izg-GH-iT0"/>
+                <constraint firstItem="mFZ-dM-znt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="k1w-69-aie"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="button_background_878787.png" width="25" height="25"/>
+        <image name="button_bg_000.png" width="25" height="25"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

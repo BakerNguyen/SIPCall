@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>ID</key>
+		<integer>0</integer>
+		<key>ICON</key>
+		<string>s_contacts</string>
+		<key>NAME</key>
+		<string>Contacts</string>
+	</dict>
+	<dict>
+		<key>ID</key>
+		<integer>1</integer>
+		<key>ICON</key>
+		<string>s_chats</string>
+		<key>NAME</key>
+		<string>Chats</string>
+	</dict>
+	<dict>
+		<key>ID</key>
+		<integer>2</integer>
+		<key>ICON</key>
+		<string>s_email</string>
+		<key>NAME</key>
+		<string>Emails</string>
+	</dict>
+	<dict>
+		<key>ID</key>
+		<integer>3</integer>
+		<key>ICON</key>
+		<string>s_note</string>
+		<key>NAME</key>
+		<string>Secure Notes</string>
+	</dict>
+	<dict>
+		<key>ID</key>
+		<integer>4</integer>
+		<key>ICON</key>
+		<string>s_notifi</string>
+		<key>NAME</key>
+		<string>Notifications</string>
+	</dict>
+	<dict>
+		<key>ID</key>
+		<integer>5</integer>
+		<key>ICON</key>
+		<string>s_settings</string>
+		<key>NAME</key>
+		<string>Settings</string>
+	</dict>
+</array>
+</plist>

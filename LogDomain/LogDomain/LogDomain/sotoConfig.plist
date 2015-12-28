@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>src</key>
+	<string>OneKryptoChat</string>
+	<key>BASE_URL</key>
+	<string>http://kapi1.mtouche-mobile.com:30/soto/api/</string>
+	<key>MAX_ITEM_PER_PUSH</key>
+	<integer>50</integer>
+	<key>MIN_ITEM</key>
+	<integer>20</integer>
+	<key>PERCENT_DECREASE</key>
+	<integer>10</integer>
+	<key>MAX_ITEM_STORAGE</key>
+	<string>1000</string>
+</dict>
+</plist>

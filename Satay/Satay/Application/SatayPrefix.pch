@@ -1,0 +1,30 @@
+//
+//  SatayPrefix.pch
+//  Satay
+//
+//  Created by Daniel Nguyen on 2/4/15.
+//  Copyright (c) 2015 enclave. All rights reserved.
+//
+
+#ifndef Satay_SatayPrefix_pch
+#define Satay_SatayPrefix_pch
+
+#import <Availability.h>
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Interface.h"
+#import "AppFacade.h"
+#import "AppDelegate.h"
+#import "SotoConstant.h"
+
+#import <AddressBook/AddressBook.h>
+
+#endif
+
+#endif

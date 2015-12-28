@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A02D5D11B4E7D1F00EE4A52 /* rootca.pem in Resources */ = {isa = PBXBuildFile; fileRef = 3A02D5D01B4E7D1F00EE4A52 /* rootca.pem */; };
+		3A2932BF1AF7791D00D39007 /* SIPFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2932BE1AF7791D00D39007 /* SIPFacade.m */; };
+		3A886A941AF777AC00F7EA15 /* SIPDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A886A921AF7772500F7EA15 /* SIPDomain.framework */; };
+		3A886A951AF777AC00F7EA15 /* SIPDomain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A886A921AF7772500F7EA15 /* SIPDomain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3AF543E31AE9ECDA009F75D0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3AF543CC1AE9ECDA009F75D0 /* Localizable.strings */; };
+		3AF543E41AE9ECDA009F75D0 /* hold.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3AF543CF1AE9ECDA009F75D0 /* hold.wav */; };
+		3AF543E51AE9ECDA009F75D0 /* licenses.html in Resources */ = {isa = PBXBuildFile; fileRef = 3AF543D01AE9ECDA009F75D0 /* licenses.html */; };
+		3AF543E61AE9ECDA009F75D0 /* licenses.md in Sources */ = {isa = PBXBuildFile; fileRef = 3AF543D11AE9ECDA009F75D0 /* licenses.md */; };
+		3AF543E71AE9ECDA009F75D0 /* linphonerc in Resources */ = {isa = PBXBuildFile; fileRef = 3AF543D21AE9ECDA009F75D0 /* linphonerc */; };
+		3AF543E81AE9ECDA009F75D0 /* linphonerc-factory in Resources */ = {isa = PBXBuildFile; fileRef = 3AF543D31AE9ECDA009F75D0 /* linphonerc-factory */; };
+		3AF543E91AE9ECDA009F75D0 /* linphonerc-factory~ipad in Resources */ = {isa = PBXBuildFile; fileRef = 3AF543D41AE9ECDA009F75D0 /* linphonerc-factory~ipad */; };
+		3AF543EA1AE9ECDA009F75D0 /* linphonerc~ipad in Resources */ = {isa = PBXBuildFile; fileRef = 3AF543D51AE9ECDA009F75D0 /* linphonerc~ipad */; };
+		3AF543EB1AE9ECDA009F75D0 /* message_receive.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3AF543D61AE9ECDA009F75D0 /* message_receive.wav */; };
+		3AF543EC1AE9ECDA009F75D0 /* msg.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3AF543D71AE9ECDA009F75D0 /* msg.caf */; };
+		3AF543ED1AE9ECDA009F75D0 /* msg.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3AF543D81AE9ECDA009F75D0 /* msg.wav */; };
+		3AF543EE1AE9ECDA009F75D0 /* ring.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3AF543D91AE9ECDA009F75D0 /* ring.caf */; };
+		3AF543EF1AE9ECDA009F75D0 /* ring.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3AF543DA1AE9ECDA009F75D0 /* ring.wav */; };
+		3AF543F01AE9ECDA009F75D0 /* ringback.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3AF543DB1AE9ECDA009F75D0 /* ringback.wav */; };
+		3AF543F11AE9ECDA009F75D0 /* shortring.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3AF543DD1AE9ECDA009F75D0 /* shortring.caf */; };
+		3AF543F21AE9ECDA009F75D0 /* waiting_call_ring.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3AF543DE1AE9ECDA009F75D0 /* waiting_call_ring.mp3 */; };
+		3AF543F31AE9ECDA009F75D0 /* wizard_external_sip.rc in Resources */ = {isa = PBXBuildFile; fileRef = 3AF543DF1AE9ECDA009F75D0 /* wizard_external_sip.rc */; };
+		3AF543F41AE9ECDA009F75D0 /* wizard_linphone_create.rc in Resources */ = {isa = PBXBuildFile; fileRef = 3AF543E01AE9ECDA009F75D0 /* wizard_linphone_create.rc */; };
+		3AF543F51AE9ECDA009F75D0 /* wizard_linphone_existing.rc in Resources */ = {isa = PBXBuildFile; fileRef = 3AF543E11AE9ECDA009F75D0 /* wizard_linphone_existing.rc */; };
+		3AF543F61AE9ECDA009F75D0 /* wizard_remote.rc in Resources */ = {isa = PBXBuildFile; fileRef = 3AF543E21AE9ECDA009F75D0 /* wizard_remote.rc */; };
+		73C331A71ADB5F1E003AFE86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C331A61ADB5F1E003AFE86 /* main.m */; };
+		73C331AA1ADB5F1E003AFE86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C331A91ADB5F1E003AFE86 /* AppDelegate.m */; };
+		73C331AD1ADB5F1E003AFE86 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C331AC1ADB5F1E003AFE86 /* ViewController.m */; };
+		73C331B01ADB5F1E003AFE86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73C331AE1ADB5F1E003AFE86 /* Main.storyboard */; };
+		73C331B21ADB5F1E003AFE86 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73C331B11ADB5F1E003AFE86 /* Images.xcassets */; };
+		73C331B51ADB5F1E003AFE86 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73C331B31ADB5F1E003AFE86 /* LaunchScreen.xib */; };
+		73C331C11ADB5F1E003AFE86 /* SIPDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C331C01ADB5F1E003AFE86 /* SIPDemoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		73C331BB1ADB5F1E003AFE86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73C331991ADB5F1E003AFE86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73C331A01ADB5F1E003AFE86;
+			remoteInfo = SIPDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3AF543F91AE9EDE3009F75D0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3A886A951AF777AC00F7EA15 /* SIPDomain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3A02D5D01B4E7D1F00EE4A52 /* rootca.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = rootca.pem; sourceTree = "<group>"; };
+		3A2932BD1AF7791D00D39007 /* SIPFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIPFacade.h; sourceTree = "<group>"; };
+		3A2932BE1AF7791D00D39007 /* SIPFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIPFacade.m; sourceTree = "<group>"; };
+		3A886A921AF7772500F7EA15 /* SIPDomain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SIPDomain.framework; sourceTree = "<group>"; };
+		3AC03BFF1AF85FAB006866C4 /* UIDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIDelegate.h; sourceTree = "<group>"; };
+		3AF543CD1AE9ECDA009F75D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3AF543CE1AE9ECDA009F75D0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3AF543CF1AE9ECDA009F75D0 /* hold.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hold.wav; sourceTree = "<group>"; };
+		3AF543D01AE9ECDA009F75D0 /* licenses.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = licenses.html; sourceTree = "<group>"; };
+		3AF543D11AE9ECDA009F75D0 /* licenses.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = licenses.md; sourceTree = "<group>"; };
+		3AF543D21AE9ECDA009F75D0 /* linphonerc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linphonerc; sourceTree = "<group>"; };
+		3AF543D31AE9ECDA009F75D0 /* linphonerc-factory */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "linphonerc-factory"; sourceTree = "<group>"; };
+		3AF543D41AE9ECDA009F75D0 /* linphonerc-factory~ipad */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "linphonerc-factory~ipad"; sourceTree = "<group>"; };
+		3AF543D51AE9ECDA009F75D0 /* linphonerc~ipad */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "linphonerc~ipad"; sourceTree = "<group>"; };
+		3AF543D61AE9ECDA009F75D0 /* message_receive.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = message_receive.wav; sourceTree = "<group>"; };
+		3AF543D71AE9ECDA009F75D0 /* msg.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = msg.caf; sourceTree = "<group>"; };
+		3AF543D81AE9ECDA009F75D0 /* msg.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = msg.wav; sourceTree = "<group>"; };
+		3AF543D91AE9ECDA009F75D0 /* ring.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ring.caf; sourceTree = "<group>"; };
+		3AF543DA1AE9ECDA009F75D0 /* ring.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ring.wav; sourceTree = "<group>"; };
+		3AF543DB1AE9ECDA009F75D0 /* ringback.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ringback.wav; sourceTree = "<group>"; };
+		3AF543DC1AE9ECDA009F75D0 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3AF543DD1AE9ECDA009F75D0 /* shortring.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = shortring.caf; sourceTree = "<group>"; };
+		3AF543DE1AE9ECDA009F75D0 /* waiting_call_ring.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = waiting_call_ring.mp3; sourceTree = "<group>"; };
+		3AF543DF1AE9ECDA009F75D0 /* wizard_external_sip.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = wizard_external_sip.rc; sourceTree = "<group>"; };
+		3AF543E01AE9ECDA009F75D0 /* wizard_linphone_create.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = wizard_linphone_create.rc; sourceTree = "<group>"; };
+		3AF543E11AE9ECDA009F75D0 /* wizard_linphone_existing.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = wizard_linphone_existing.rc; sourceTree = "<group>"; };
+		3AF543E21AE9ECDA009F75D0 /* wizard_remote.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = wizard_remote.rc; sourceTree = "<group>"; };
+		73C331A11ADB5F1E003AFE86 /* SIPDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SIPDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		73C331A51ADB5F1E003AFE86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73C331A61ADB5F1E003AFE86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		73C331A81ADB5F1E003AFE86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		73C331A91ADB5F1E003AFE86 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		73C331AB1ADB5F1E003AFE86 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		73C331AC1ADB5F1E003AFE86 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		73C331AF1ADB5F1E003AFE86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		73C331B11ADB5F1E003AFE86 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		73C331B41ADB5F1E003AFE86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		73C331BA1ADB5F1E003AFE86 /* SIPDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SIPDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		73C331BF1ADB5F1E003AFE86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73C331C01ADB5F1E003AFE86 /* SIPDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIPDemoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		73C3319E1ADB5F1E003AFE86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A886A941AF777AC00F7EA15 /* SIPDomain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73C331B71ADB5F1E003AFE86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3AF543CB1AE9ECDA009F75D0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3AF543CC1AE9ECDA009F75D0 /* Localizable.strings */,
+				3AF543CF1AE9ECDA009F75D0 /* hold.wav */,
+				3AF543D01AE9ECDA009F75D0 /* licenses.html */,
+				3AF543D11AE9ECDA009F75D0 /* licenses.md */,
+				3AF543D21AE9ECDA009F75D0 /* linphonerc */,
+				3AF543D31AE9ECDA009F75D0 /* linphonerc-factory */,
+				3AF543D41AE9ECDA009F75D0 /* linphonerc-factory~ipad */,
+				3AF543D51AE9ECDA009F75D0 /* linphonerc~ipad */,
+				3AF543D61AE9ECDA009F75D0 /* message_receive.wav */,
+				3AF543D71AE9ECDA009F75D0 /* msg.caf */,
+				3AF543D81AE9ECDA009F75D0 /* msg.wav */,
+				3AF543D91AE9ECDA009F75D0 /* ring.caf */,
+				3AF543DA1AE9ECDA009F75D0 /* ring.wav */,
+				3AF543DB1AE9ECDA009F75D0 /* ringback.wav */,
+				3AF543DD1AE9ECDA009F75D0 /* shortring.caf */,
+				3AF543DE1AE9ECDA009F75D0 /* waiting_call_ring.mp3 */,
+				3AF543DF1AE9ECDA009F75D0 /* wizard_external_sip.rc */,
+				3AF543E01AE9ECDA009F75D0 /* wizard_linphone_create.rc */,
+				3AF543E11AE9ECDA009F75D0 /* wizard_linphone_existing.rc */,
+				3AF543E21AE9ECDA009F75D0 /* wizard_remote.rc */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		73C331981ADB5F1E003AFE86 = {
+			isa = PBXGroup;
+			children = (
+				3A02D5D01B4E7D1F00EE4A52 /* rootca.pem */,
+				3A886A921AF7772500F7EA15 /* SIPDomain.framework */,
+				73C331A31ADB5F1E003AFE86 /* SIPDemo */,
+				73C331BD1ADB5F1E003AFE86 /* SIPDemoTests */,
+				73C331A21ADB5F1E003AFE86 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		73C331A21ADB5F1E003AFE86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73C331A11ADB5F1E003AFE86 /* SIPDemo.app */,
+				73C331BA1ADB5F1E003AFE86 /* SIPDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73C331A31ADB5F1E003AFE86 /* SIPDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3AF543CB1AE9ECDA009F75D0 /* Resources */,
+				73C331A81ADB5F1E003AFE86 /* AppDelegate.h */,
+				73C331A91ADB5F1E003AFE86 /* AppDelegate.m */,
+				73C331AB1ADB5F1E003AFE86 /* ViewController.h */,
+				73C331AC1ADB5F1E003AFE86 /* ViewController.m */,
+				73C331AE1ADB5F1E003AFE86 /* Main.storyboard */,
+				73C331B11ADB5F1E003AFE86 /* Images.xcassets */,
+				73C331B31ADB5F1E003AFE86 /* LaunchScreen.xib */,
+				73C331A41ADB5F1E003AFE86 /* Supporting Files */,
+				3A2932BD1AF7791D00D39007 /* SIPFacade.h */,
+				3A2932BE1AF7791D00D39007 /* SIPFacade.m */,
+				3AC03BFF1AF85FAB006866C4 /* UIDelegate.h */,
+			);
+			path = SIPDemo;
+			sourceTree = "<group>";
+		};
+		73C331A41ADB5F1E003AFE86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				73C331A51ADB5F1E003AFE86 /* Info.plist */,
+				73C331A61ADB5F1E003AFE86 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		73C331BD1ADB5F1E003AFE86 /* SIPDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				73C331C01ADB5F1E003AFE86 /* SIPDemoTests.m */,
+				73C331BE1ADB5F1E003AFE86 /* Supporting Files */,
+			);
+			path = SIPDemoTests;
+			sourceTree = "<group>";
+		};
+		73C331BE1ADB5F1E003AFE86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				73C331BF1ADB5F1E003AFE86 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		73C331A01ADB5F1E003AFE86 /* SIPDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73C331C41ADB5F1E003AFE86 /* Build configuration list for PBXNativeTarget "SIPDemo" */;
+			buildPhases = (
+				73C3319D1ADB5F1E003AFE86 /* Sources */,
+				73C3319E1ADB5F1E003AFE86 /* Frameworks */,
+				73C3319F1ADB5F1E003AFE86 /* Resources */,
+				3AF543F91AE9EDE3009F75D0 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SIPDemo;
+			productName = SIPDemo;
+			productReference = 73C331A11ADB5F1E003AFE86 /* SIPDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		73C331B91ADB5F1E003AFE86 /* SIPDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73C331C71ADB5F1E003AFE86 /* Build configuration list for PBXNativeTarget "SIPDemoTests" */;
+			buildPhases = (
+				73C331B61ADB5F1E003AFE86 /* Sources */,
+				73C331B71ADB5F1E003AFE86 /* Frameworks */,
+				73C331B81ADB5F1E003AFE86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73C331BC1ADB5F1E003AFE86 /* PBXTargetDependency */,
+			);
+			name = SIPDemoTests;
+			productName = SIPDemoTests;
+			productReference = 73C331BA1ADB5F1E003AFE86 /* SIPDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		73C331991ADB5F1E003AFE86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = mTouche;
+				TargetAttributes = {
+					73C331A01ADB5F1E003AFE86 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					73C331B91ADB5F1E003AFE86 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 73C331A01ADB5F1E003AFE86;
+					};
+				};
+			};
+			buildConfigurationList = 73C3319C1ADB5F1E003AFE86 /* Build configuration list for PBXProject "SIPDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+				ru,
+			);
+			mainGroup = 73C331981ADB5F1E003AFE86;
+			productRefGroup = 73C331A21ADB5F1E003AFE86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73C331A01ADB5F1E003AFE86 /* SIPDemo */,
+				73C331B91ADB5F1E003AFE86 /* SIPDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		73C3319F1ADB5F1E003AFE86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A02D5D11B4E7D1F00EE4A52 /* rootca.pem in Resources */,
+				3AF543EF1AE9ECDA009F75D0 /* ring.wav in Resources */,
+				3AF543E71AE9ECDA009F75D0 /* linphonerc in Resources */,
+				3AF543E81AE9ECDA009F75D0 /* linphonerc-factory in Resources */,
+				3AF543E51AE9ECDA009F75D0 /* licenses.html in Resources */,
+				3AF543E41AE9ECDA009F75D0 /* hold.wav in Resources */,
+				3AF543EE1AE9ECDA009F75D0 /* ring.caf in Resources */,
+				73C331B01ADB5F1E003AFE86 /* Main.storyboard in Resources */,
+				3AF543EA1AE9ECDA009F75D0 /* linphonerc~ipad in Resources */,
+				3AF543EC1AE9ECDA009F75D0 /* msg.caf in Resources */,
+				3AF543F01AE9ECDA009F75D0 /* ringback.wav in Resources */,
+				3AF543EB1AE9ECDA009F75D0 /* message_receive.wav in Resources */,
+				3AF543E31AE9ECDA009F75D0 /* Localizable.strings in Resources */,
+				3AF543F41AE9ECDA009F75D0 /* wizard_linphone_create.rc in Resources */,
+				3AF543F21AE9ECDA009F75D0 /* waiting_call_ring.mp3 in Resources */,
+				3AF543ED1AE9ECDA009F75D0 /* msg.wav in Resources */,
+				3AF543F61AE9ECDA009F75D0 /* wizard_remote.rc in Resources */,
+				3AF543E91AE9ECDA009F75D0 /* linphonerc-factory~ipad in Resources */,
+				3AF543F51AE9ECDA009F75D0 /* wizard_linphone_existing.rc in Resources */,
+				3AF543F31AE9ECDA009F75D0 /* wizard_external_sip.rc in Resources */,
+				73C331B51ADB5F1E003AFE86 /* LaunchScreen.xib in Resources */,
+				3AF543F11AE9ECDA009F75D0 /* shortring.caf in Resources */,
+				73C331B21ADB5F1E003AFE86 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73C331B81ADB5F1E003AFE86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		73C3319D1ADB5F1E003AFE86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AF543E61AE9ECDA009F75D0 /* licenses.md in Sources */,
+				73C331AD1ADB5F1E003AFE86 /* ViewController.m in Sources */,
+				3A2932BF1AF7791D00D39007 /* SIPFacade.m in Sources */,
+				73C331AA1ADB5F1E003AFE86 /* AppDelegate.m in Sources */,
+				73C331A71ADB5F1E003AFE86 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73C331B61ADB5F1E003AFE86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73C331C11ADB5F1E003AFE86 /* SIPDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		73C331BC1ADB5F1E003AFE86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73C331A01ADB5F1E003AFE86 /* SIPDemo */;
+			targetProxy = 73C331BB1ADB5F1E003AFE86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3AF543CC1AE9ECDA009F75D0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AF543CD1AE9ECDA009F75D0 /* en */,
+				3AF543CE1AE9ECDA009F75D0 /* fr */,
+				3AF543DC1AE9ECDA009F75D0 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		73C331AE1ADB5F1E003AFE86 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73C331AF1ADB5F1E003AFE86 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		73C331B31ADB5F1E003AFE86 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73C331B41ADB5F1E003AFE86 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		73C331C21ADB5F1E003AFE86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		73C331C31ADB5F1E003AFE86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		73C331C51ADB5F1E003AFE86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: k y (W3S57R42KL)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/SIPDomain-gecdhyofnldzgkallkrbunmacysm/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SIPDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "11e8463d-3e77-4d4c-b72e-7f29412222bc";
+			};
+			name = Debug;
+		};
+		73C331C61ADB5F1E003AFE86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: k y (W3S57R42KL)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/SIPDomain-gecdhyofnldzgkallkrbunmacysm/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SIPDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "11e8463d-3e77-4d4c-b72e-7f29412222bc";
+			};
+			name = Release;
+		};
+		73C331C81ADB5F1E003AFE86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SIPDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SIPDemo.app/SIPDemo";
+			};
+			name = Debug;
+		};
+		73C331C91ADB5F1E003AFE86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SIPDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SIPDemo.app/SIPDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		73C3319C1ADB5F1E003AFE86 /* Build configuration list for PBXProject "SIPDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73C331C21ADB5F1E003AFE86 /* Debug */,
+				73C331C31ADB5F1E003AFE86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73C331C41ADB5F1E003AFE86 /* Build configuration list for PBXNativeTarget "SIPDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73C331C51ADB5F1E003AFE86 /* Debug */,
+				73C331C61ADB5F1E003AFE86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73C331C71ADB5F1E003AFE86 /* Build configuration list for PBXNativeTarget "SIPDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73C331C81ADB5F1E003AFE86 /* Debug */,
+				73C331C91ADB5F1E003AFE86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 73C331991ADB5F1E003AFE86 /* Project object */;
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentOption">
+            <connections>
+                <outlet property="bntRestore_IAP" destination="GlU-fj-LTx" id="Cwk-nE-jgs"/>
+                <outlet property="btnInAppPurchase" destination="HG8-IM-v5V" id="Ee4-VO-F5r"/>
+                <outlet property="view" destination="ewp-f0-5Gh" id="e26-iq-wQ4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ewp-f0-5Gh">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="HG8-IM-v5V">
+                    <rect key="frame" x="40" y="20" width="240" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="In-App Purchase">
+                        <color key="titleColor" red="0.18431372939999999" green="0.58039218189999997" blue="0.80000007149999997" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <real key="value" value="0.80000000000000004"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="press_button:" destination="-1" eventType="touchDown" id="6Ts-xd-71V"/>
+                        <action selector="release_button:" destination="-1" eventType="touchUpInside" id="QyQ-6Z-vJm"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C02-3i-BpM">
+                    <rect key="frame" x="115" y="543" width="84" height="4"/>
+                    <color key="backgroundColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="484-FO-QDZ">
+                    <rect key="frame" x="115" y="517" width="81" height="30"/>
+                    <state key="normal" title="Contact Us">
+                        <color key="titleColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="GlU-fj-LTx">
+                    <rect key="frame" x="40" y="107" width="240" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="Restore In-App Purchase">
+                        <color key="titleColor" red="0.18431372939999999" green="0.58039218189999997" blue="0.80000007149999997" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <real key="value" value="0.80000000000000004"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="press_button:" destination="-1" eventType="touchDown" id="97U-kG-0mb"/>
+                        <action selector="release_button:" destination="-1" eventType="touchUpInside" id="OhP-Ru-YLZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="GlU-fj-LTx" secondAttribute="centerX" id="4BH-Z8-t91"/>
+                <constraint firstItem="484-FO-QDZ" firstAttribute="bottom" secondItem="C02-3i-BpM" secondAttribute="bottom" id="5c8-Z7-z2e"/>
+                <constraint firstItem="484-FO-QDZ" firstAttribute="centerX" secondItem="C02-3i-BpM" secondAttribute="centerX" id="Fe2-Bm-4AG"/>
+                <constraint firstItem="GlU-fj-LTx" firstAttribute="top" secondItem="HG8-IM-v5V" secondAttribute="bottom" constant="27" id="Oq3-gM-OyX"/>
+                <constraint firstAttribute="bottom" secondItem="484-FO-QDZ" secondAttribute="bottom" constant="21" id="UVb-7C-zAD"/>
+                <constraint firstAttribute="centerX" secondItem="484-FO-QDZ" secondAttribute="centerX" constant="-9.5" id="fn0-Xe-b4L"/>
+                <constraint firstItem="484-FO-QDZ" firstAttribute="bottom" secondItem="C02-3i-BpM" secondAttribute="bottom" id="kwK-GH-Il4"/>
+                <constraint firstAttribute="centerX" secondItem="HG8-IM-v5V" secondAttribute="centerX" id="mDA-Vo-ZIq"/>
+            </constraints>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

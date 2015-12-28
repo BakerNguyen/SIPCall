@@ -1,0 +1,6 @@
+framework module EmailDomain {
+  umbrella header "EmailDomain.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,56 @@
+//
+//  LogInViewCell.m
+//  Satay
+//
+//  Created by enclave on 1/27/15.
+//  Copyright (c) 2015 enclave. All rights reserved.
+//
+
+#import "LogInViewCell.h"
+#import "Themer.h"
+
+@interface LogInViewCell ()
+
+@end
+
+@implementation LogInViewCell
+@synthesize txtLogin,cellNaming_PlaceHolder;
+
+
+- (void)viewDidLoad
+{
+
+    txtLogin.delegate = self;
+
+}
+
+- (void)layoutSubviews
+{
+ 
+    txtLogin.delegate = self;
+    txtLogin.layer.borderWidth = 0;
+    [txtLogin setTextColor:[UIColor blackColor]];
+    [txtLogin setValue:COLOR_170170170 forKeyPath:@"_placeholderLabel.textColor"];
+    txtLogin.borderStyle = UITextBorderStyleNone;
+    txtLogin.placeholder =cellNaming_PlaceHolder;
+    
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
+
+    NSUInteger newLength = [textField.text length] + [string length] - range.length;
+ 
+    NSString * actual_text = [textField.text stringByReplacingCharactersInRange:range withString:string];
+    
+    [self.delegate LogInViewCellAction:actual_text count:(int)newLength];
+    
+    //DDLogVerbose(@"ky login cell - %@ - string - %@",actual_text, string);
+    
+    return YES;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
+@end

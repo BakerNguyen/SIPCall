@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="BlockUsersCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hu7-fk-ppS">
+                        <rect key="frame" x="69" y="22" width="149" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NmH-49-lsU">
+                        <rect key="frame" x="234" y="15" width="70" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="FXD-NM-wNO"/>
+                            <constraint firstAttribute="width" constant="70" id="e2B-Be-9wK"/>
+                        </constraints>
+                        <state key="normal" title="UnBlock">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="unBlockUser:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="znu-HR-ioh"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DEH-6a-AI4">
+                        <rect key="frame" x="-71" y="73" width="51" height="98"/>
+                        <color key="backgroundColor" red="0.82745098039999998" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="c_empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="g2r-Zd-9uz">
+                        <rect key="frame" x="8" y="9" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="ZLZ-cc-tgv"/>
+                            <constraint firstAttribute="height" constant="45" id="xhK-Bv-VV7"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h5V-tg-56Y">
+                        <rect key="frame" x="69" y="63" width="251" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="1pW-Rk-X0n"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Hu7-fk-ppS" firstAttribute="leading" secondItem="g2r-Zd-9uz" secondAttribute="trailing" constant="16" id="0HU-Gf-ItW"/>
+                    <constraint firstAttribute="trailing" secondItem="h5V-tg-56Y" secondAttribute="trailing" id="2Z0-mG-A3B"/>
+                    <constraint firstAttribute="centerY" secondItem="g2r-Zd-9uz" secondAttribute="centerY" id="BgR-k3-CXx"/>
+                    <constraint firstItem="NmH-49-lsU" firstAttribute="leading" secondItem="Hu7-fk-ppS" secondAttribute="trailing" constant="16" id="E1e-Ys-35d"/>
+                    <constraint firstItem="Hu7-fk-ppS" firstAttribute="leading" secondItem="h5V-tg-56Y" secondAttribute="leading" id="FOt-w9-23h"/>
+                    <constraint firstAttribute="bottom" secondItem="h5V-tg-56Y" secondAttribute="bottom" id="IOx-KF-Vcx"/>
+                    <constraint firstAttribute="trailing" secondItem="NmH-49-lsU" secondAttribute="trailing" constant="16" id="dsT-ly-VOd"/>
+                    <constraint firstItem="g2r-Zd-9uz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="kW1-ye-UzG"/>
+                    <constraint firstAttribute="centerY" secondItem="NmH-49-lsU" secondAttribute="centerY" id="pgm-8q-AX8"/>
+                    <constraint firstItem="Hu7-fk-ppS" firstAttribute="baseline" secondItem="NmH-49-lsU" secondAttribute="baseline" id="toC-lV-7a0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatar" destination="g2r-Zd-9uz" id="Z7d-6D-Ub4"/>
+                <outlet property="btnUnblock" destination="NmH-49-lsU" id="dLw-6F-fru"/>
+                <outlet property="lblName" destination="Hu7-fk-ppS" id="B5b-mZ-fff"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="140.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="c_empty.png" width="45" height="45"/>
+    </resources>
+</document>

@@ -1,0 +1,956 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		FB69331B1AE4FD0C0013BFC9 /* multiTarget */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FB69331C1AE4FD0D0013BFC9 /* Build configuration list for PBXAggregateTarget "multiTarget" */;
+			buildPhases = (
+				FB69331F1AE4FD130013BFC9 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = multiTarget;
+			productName = multiTarget;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		222D0A821B4FB24C001C785E /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222D0A811B4FB24C001C785E /* AdSupport.framework */; };
+		222D0A871B4FBCE9001C785E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 222D0A861B4FBCE9001C785E /* GoogleService-Info.plist */; };
+		223834501B4F68D90041EFB0 /* Changelog.txt in Resources */ = {isa = PBXBuildFile; fileRef = 223833D31B4F68D90041EFB0 /* Changelog.txt */; };
+		223834751B4F68D90041EFB0 /* GAI.h in Headers */ = {isa = PBXBuildFile; fileRef = 223833FF1B4F68D90041EFB0 /* GAI.h */; };
+		223834761B4F68D90041EFB0 /* GAIDictionaryBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 223834001B4F68D90041EFB0 /* GAIDictionaryBuilder.h */; };
+		223834771B4F68D90041EFB0 /* GAIEcommerceFields.h in Headers */ = {isa = PBXBuildFile; fileRef = 223834011B4F68D90041EFB0 /* GAIEcommerceFields.h */; };
+		223834781B4F68D90041EFB0 /* GAIEcommerceProduct.h in Headers */ = {isa = PBXBuildFile; fileRef = 223834021B4F68D90041EFB0 /* GAIEcommerceProduct.h */; };
+		223834791B4F68D90041EFB0 /* GAIEcommerceProductAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 223834031B4F68D90041EFB0 /* GAIEcommerceProductAction.h */; };
+		2238347A1B4F68D90041EFB0 /* GAIEcommercePromotion.h in Headers */ = {isa = PBXBuildFile; fileRef = 223834041B4F68D90041EFB0 /* GAIEcommercePromotion.h */; };
+		2238347B1B4F68D90041EFB0 /* GAIFields.h in Headers */ = {isa = PBXBuildFile; fileRef = 223834051B4F68D90041EFB0 /* GAIFields.h */; };
+		2238347C1B4F68D90041EFB0 /* GAIHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 223834061B4F68D90041EFB0 /* GAIHeader.h */; };
+		2238347D1B4F68D90041EFB0 /* GAILogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 223834071B4F68D90041EFB0 /* GAILogger.h */; };
+		2238347E1B4F68D90041EFB0 /* GAITrackedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 223834081B4F68D90041EFB0 /* GAITrackedViewController.h */; };
+		2238347F1B4F68D90041EFB0 /* GAITracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 223834091B4F68D90041EFB0 /* GAITracker.h */; };
+		223834801B4F68D90041EFB0 /* Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2238340A1B4F68D90041EFB0 /* Readme.txt */; };
+		223834811B4F68D90041EFB0 /* Changelog.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2238340C1B4F68D90041EFB0 /* Changelog.txt */; };
+		223834B41B4F68D90041EFB0 /* TAGContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 223834461B4F68D90041EFB0 /* TAGContainer.h */; };
+		223834B51B4F68D90041EFB0 /* TAGContainerOpener.h in Headers */ = {isa = PBXBuildFile; fileRef = 223834471B4F68D90041EFB0 /* TAGContainerOpener.h */; };
+		223834B61B4F68D90041EFB0 /* TAGDataLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 223834481B4F68D90041EFB0 /* TAGDataLayer.h */; };
+		223834B71B4F68D90041EFB0 /* TAGHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 223834491B4F68D90041EFB0 /* TAGHeader.h */; };
+		223834B81B4F68D90041EFB0 /* TAGLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 2238344A1B4F68D90041EFB0 /* TAGLogger.h */; };
+		223834B91B4F68D90041EFB0 /* TAGManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2238344B1B4F68D90041EFB0 /* TAGManager.h */; };
+		223834BA1B4F68D90041EFB0 /* Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2238344C1B4F68D90041EFB0 /* Readme.txt */; };
+		223834BB1B4F68D90041EFB0 /* libAdIdAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2238344D1B4F68D90041EFB0 /* libAdIdAccess.a */; };
+		223834BC1B4F68D90041EFB0 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2238344E1B4F68D90041EFB0 /* libGoogleAnalyticsServices.a */; };
+		223834BD1B4F68D90041EFB0 /* Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2238344F1B4F68D90041EFB0 /* Readme.txt */; };
+		223834C91B4F6B1A0041EFB0 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 223834C81B4F6B1A0041EFB0 /* libsqlite3.dylib */; };
+		223834CD1B4F6C9F0041EFB0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223834CC1B4F6C9F0041EFB0 /* CoreData.framework */; };
+		223834CF1B4F6CAA0041EFB0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223834CE1B4F6CAA0041EFB0 /* SystemConfiguration.framework */; };
+		223834D11B4F6CB90041EFB0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 223834D01B4F6CB90041EFB0 /* libz.dylib */; };
+		FB5FAA161AE78924001B2FDA /* SRDConstants.m in Headers */ = {isa = PBXBuildFile; fileRef = FB6932F61AE4ED1A0013BFC9 /* SRDConstants.m */; };
+		FB6932B61AE4EB130013BFC9 /* LogDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = FB6932B51AE4EB130013BFC9 /* LogDomain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB6932BC1AE4EB130013BFC9 /* LogDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6932B01AE4EB130013BFC9 /* LogDomain.framework */; };
+		FB6932C31AE4EB130013BFC9 /* LogDomainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6932C21AE4EB130013BFC9 /* LogDomainTests.m */; };
+		FB6932E11AE4ED040013BFC9 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FB6932CE1AE4ED040013BFC9 /* AFHTTPRequestOperation.h */; };
+		FB6932E21AE4ED040013BFC9 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6932CF1AE4ED040013BFC9 /* AFHTTPRequestOperation.m */; };
+		FB6932E31AE4ED040013BFC9 /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FB6932D01AE4ED040013BFC9 /* AFHTTPRequestOperationManager.h */; };
+		FB6932E41AE4ED040013BFC9 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6932D11AE4ED040013BFC9 /* AFHTTPRequestOperationManager.m */; };
+		FB6932E51AE4ED040013BFC9 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FB6932D21AE4ED040013BFC9 /* AFHTTPSessionManager.h */; };
+		FB6932E61AE4ED040013BFC9 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6932D31AE4ED040013BFC9 /* AFHTTPSessionManager.m */; };
+		FB6932E71AE4ED040013BFC9 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FB6932D41AE4ED040013BFC9 /* AFNetworking.h */; };
+		FB6932E81AE4ED040013BFC9 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FB6932D51AE4ED040013BFC9 /* AFNetworkReachabilityManager.h */; };
+		FB6932E91AE4ED040013BFC9 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6932D61AE4ED040013BFC9 /* AFNetworkReachabilityManager.m */; };
+		FB6932EA1AE4ED040013BFC9 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = FB6932D71AE4ED040013BFC9 /* AFSecurityPolicy.h */; };
+		FB6932EB1AE4ED040013BFC9 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6932D81AE4ED040013BFC9 /* AFSecurityPolicy.m */; };
+		FB6932EC1AE4ED040013BFC9 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FB6932D91AE4ED040013BFC9 /* AFURLConnectionOperation.h */; };
+		FB6932ED1AE4ED040013BFC9 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6932DA1AE4ED040013BFC9 /* AFURLConnectionOperation.m */; };
+		FB6932EE1AE4ED040013BFC9 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = FB6932DB1AE4ED040013BFC9 /* AFURLRequestSerialization.h */; };
+		FB6932EF1AE4ED040013BFC9 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6932DC1AE4ED040013BFC9 /* AFURLRequestSerialization.m */; };
+		FB6932F01AE4ED040013BFC9 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = FB6932DD1AE4ED040013BFC9 /* AFURLResponseSerialization.h */; };
+		FB6932F11AE4ED040013BFC9 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6932DE1AE4ED040013BFC9 /* AFURLResponseSerialization.m */; };
+		FB6932F21AE4ED040013BFC9 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FB6932DF1AE4ED040013BFC9 /* AFURLSessionManager.h */; };
+		FB6932F31AE4ED040013BFC9 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6932E01AE4ED040013BFC9 /* AFURLSessionManager.m */; };
+		FB6933041AE4ED1A0013BFC9 /* SRDConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = FB6932F51AE4ED1A0013BFC9 /* SRDConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB6933051AE4ED1A0013BFC9 /* SRDConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6932F61AE4ED1A0013BFC9 /* SRDConstants.m */; };
+		FB6933061AE4ED1A0013BFC9 /* SRDLogContent.h in Headers */ = {isa = PBXBuildFile; fileRef = FB6932F81AE4ED1A0013BFC9 /* SRDLogContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB6933071AE4ED1A0013BFC9 /* SRDLogContent.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6932F91AE4ED1A0013BFC9 /* SRDLogContent.m */; };
+		FB6933081AE4ED1A0013BFC9 /* SRDRequestAPIObject.h in Headers */ = {isa = PBXBuildFile; fileRef = FB6932FA1AE4ED1A0013BFC9 /* SRDRequestAPIObject.h */; };
+		FB6933091AE4ED1A0013BFC9 /* SRDRequestAPIObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6932FB1AE4ED1A0013BFC9 /* SRDRequestAPIObject.m */; };
+		FB69330C1AE4ED1A0013BFC9 /* SRDLogStore.h in Headers */ = {isa = PBXBuildFile; fileRef = FB6932FF1AE4ED1A0013BFC9 /* SRDLogStore.h */; };
+		FB69330D1AE4ED1A0013BFC9 /* SRDLogStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6933001AE4ED1A0013BFC9 /* SRDLogStore.m */; };
+		FB69330E1AE4ED1A0013BFC9 /* SRDHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = FB6933021AE4ED1A0013BFC9 /* SRDHTTPClient.h */; };
+		FB69330F1AE4ED1A0013BFC9 /* SRDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6933031AE4ED1A0013BFC9 /* SRDHTTPClient.m */; };
+		FB6933121AE4ED900013BFC9 /* LogAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = FB6933101AE4ED900013BFC9 /* LogAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB6933131AE4ED900013BFC9 /* LogAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6933111AE4ED900013BFC9 /* LogAdapter.m */; };
+		FB6933151AE4F0300013BFC9 /* sotoConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB6933141AE4F0300013BFC9 /* sotoConfig.plist */; };
+		FBD43C371AE8C95700EA63B6 /* CLIColor.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD43C1D1AE8C95700EA63B6 /* CLIColor.h */; };
+		FBD43C381AE8C95700EA63B6 /* CLIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD43C1E1AE8C95700EA63B6 /* CLIColor.m */; };
+		FBD43C391AE8C95700EA63B6 /* CocoaLumberjack.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD43C1F1AE8C95700EA63B6 /* CocoaLumberjack.h */; };
+		FBD43C3A1AE8C95700EA63B6 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD43C201AE8C95700EA63B6 /* DDAbstractDatabaseLogger.h */; };
+		FBD43C3B1AE8C95700EA63B6 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD43C211AE8C95700EA63B6 /* DDAbstractDatabaseLogger.m */; };
+		FBD43C3C1AE8C95700EA63B6 /* DDASLLogCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD43C221AE8C95700EA63B6 /* DDASLLogCapture.h */; };
+		FBD43C3D1AE8C95700EA63B6 /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD43C231AE8C95700EA63B6 /* DDASLLogCapture.m */; };
+		FBD43C3E1AE8C95700EA63B6 /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD43C241AE8C95700EA63B6 /* DDASLLogger.h */; };
+		FBD43C3F1AE8C95700EA63B6 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD43C251AE8C95700EA63B6 /* DDASLLogger.m */; };
+		FBD43C401AE8C95700EA63B6 /* DDAssertMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD43C261AE8C95700EA63B6 /* DDAssertMacros.h */; };
+		FBD43C411AE8C95700EA63B6 /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD43C271AE8C95700EA63B6 /* DDFileLogger.h */; };
+		FBD43C421AE8C95700EA63B6 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD43C281AE8C95700EA63B6 /* DDFileLogger.m */; };
+		FBD43C431AE8C95700EA63B6 /* DDLegacyMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD43C291AE8C95700EA63B6 /* DDLegacyMacros.h */; };
+		FBD43C441AE8C95700EA63B6 /* DDLog+LOGV.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD43C2A1AE8C95700EA63B6 /* DDLog+LOGV.h */; };
+		FBD43C451AE8C95700EA63B6 /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD43C2B1AE8C95700EA63B6 /* DDLog.h */; };
+		FBD43C461AE8C95700EA63B6 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD43C2C1AE8C95700EA63B6 /* DDLog.m */; };
+		FBD43C471AE8C95700EA63B6 /* DDLogMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD43C2D1AE8C95700EA63B6 /* DDLogMacros.h */; };
+		FBD43C481AE8C95700EA63B6 /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD43C2E1AE8C95700EA63B6 /* DDTTYLogger.h */; };
+		FBD43C491AE8C95700EA63B6 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD43C2F1AE8C95700EA63B6 /* DDTTYLogger.m */; };
+		FBD43C4A1AE8C95700EA63B6 /* DDContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD43C311AE8C95700EA63B6 /* DDContextFilterLogFormatter.h */; };
+		FBD43C4B1AE8C95700EA63B6 /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD43C321AE8C95700EA63B6 /* DDContextFilterLogFormatter.m */; };
+		FBD43C4C1AE8C95700EA63B6 /* DDDispatchQueueLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD43C331AE8C95700EA63B6 /* DDDispatchQueueLogFormatter.h */; };
+		FBD43C4D1AE8C95700EA63B6 /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD43C341AE8C95700EA63B6 /* DDDispatchQueueLogFormatter.m */; };
+		FBD43C4E1AE8C95700EA63B6 /* DDMultiFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD43C351AE8C95700EA63B6 /* DDMultiFormatter.h */; };
+		FBD43C4F1AE8C95700EA63B6 /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD43C361AE8C95700EA63B6 /* DDMultiFormatter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB6932BD1AE4EB130013BFC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB6932A71AE4EB130013BFC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB6932AF1AE4EB130013BFC9;
+			remoteInfo = LogDomain;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		222D0A811B4FB24C001C785E /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		222D0A861B4FBCE9001C785E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		223833D31B4F68D90041EFB0 /* Changelog.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Changelog.txt; sourceTree = "<group>"; };
+		223833FF1B4F68D90041EFB0 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		223834001B4F68D90041EFB0 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		223834011B4F68D90041EFB0 /* GAIEcommerceFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceFields.h; sourceTree = "<group>"; };
+		223834021B4F68D90041EFB0 /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProduct.h; sourceTree = "<group>"; };
+		223834031B4F68D90041EFB0 /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProductAction.h; sourceTree = "<group>"; };
+		223834041B4F68D90041EFB0 /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommercePromotion.h; sourceTree = "<group>"; };
+		223834051B4F68D90041EFB0 /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
+		223834061B4F68D90041EFB0 /* GAIHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIHeader.h; sourceTree = "<group>"; };
+		223834071B4F68D90041EFB0 /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
+		223834081B4F68D90041EFB0 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		223834091B4F68D90041EFB0 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		2238340A1B4F68D90041EFB0 /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
+		2238340C1B4F68D90041EFB0 /* Changelog.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Changelog.txt; sourceTree = "<group>"; };
+		223834461B4F68D90041EFB0 /* TAGContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAGContainer.h; sourceTree = "<group>"; };
+		223834471B4F68D90041EFB0 /* TAGContainerOpener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAGContainerOpener.h; sourceTree = "<group>"; };
+		223834481B4F68D90041EFB0 /* TAGDataLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAGDataLayer.h; sourceTree = "<group>"; };
+		223834491B4F68D90041EFB0 /* TAGHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAGHeader.h; sourceTree = "<group>"; };
+		2238344A1B4F68D90041EFB0 /* TAGLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAGLogger.h; sourceTree = "<group>"; };
+		2238344B1B4F68D90041EFB0 /* TAGManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAGManager.h; sourceTree = "<group>"; };
+		2238344C1B4F68D90041EFB0 /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
+		2238344D1B4F68D90041EFB0 /* libAdIdAccess.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdIdAccess.a; sourceTree = "<group>"; };
+		2238344E1B4F68D90041EFB0 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		2238344F1B4F68D90041EFB0 /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
+		223834C81B4F6B1A0041EFB0 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		223834CA1B4F6BA00041EFB0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		223834CC1B4F6C9F0041EFB0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		223834CE1B4F6CAA0041EFB0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		223834D01B4F6CB90041EFB0 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		FB6932B01AE4EB130013BFC9 /* LogDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LogDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB6932B41AE4EB130013BFC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB6932B51AE4EB130013BFC9 /* LogDomain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogDomain.h; sourceTree = "<group>"; };
+		FB6932BB1AE4EB130013BFC9 /* LogDomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB6932C11AE4EB130013BFC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB6932C21AE4EB130013BFC9 /* LogDomainTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogDomainTests.m; sourceTree = "<group>"; };
+		FB6932CE1AE4ED040013BFC9 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		FB6932CF1AE4ED040013BFC9 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		FB6932D01AE4ED040013BFC9 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		FB6932D11AE4ED040013BFC9 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		FB6932D21AE4ED040013BFC9 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		FB6932D31AE4ED040013BFC9 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		FB6932D41AE4ED040013BFC9 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		FB6932D51AE4ED040013BFC9 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		FB6932D61AE4ED040013BFC9 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		FB6932D71AE4ED040013BFC9 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		FB6932D81AE4ED040013BFC9 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		FB6932D91AE4ED040013BFC9 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		FB6932DA1AE4ED040013BFC9 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		FB6932DB1AE4ED040013BFC9 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		FB6932DC1AE4ED040013BFC9 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		FB6932DD1AE4ED040013BFC9 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		FB6932DE1AE4ED040013BFC9 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		FB6932DF1AE4ED040013BFC9 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		FB6932E01AE4ED040013BFC9 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		FB6932F51AE4ED1A0013BFC9 /* SRDConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRDConstants.h; sourceTree = "<group>"; };
+		FB6932F61AE4ED1A0013BFC9 /* SRDConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRDConstants.m; sourceTree = "<group>"; };
+		FB6932F81AE4ED1A0013BFC9 /* SRDLogContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRDLogContent.h; sourceTree = "<group>"; };
+		FB6932F91AE4ED1A0013BFC9 /* SRDLogContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRDLogContent.m; sourceTree = "<group>"; };
+		FB6932FA1AE4ED1A0013BFC9 /* SRDRequestAPIObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRDRequestAPIObject.h; sourceTree = "<group>"; };
+		FB6932FB1AE4ED1A0013BFC9 /* SRDRequestAPIObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRDRequestAPIObject.m; sourceTree = "<group>"; };
+		FB6932FF1AE4ED1A0013BFC9 /* SRDLogStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRDLogStore.h; sourceTree = "<group>"; };
+		FB6933001AE4ED1A0013BFC9 /* SRDLogStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRDLogStore.m; sourceTree = "<group>"; };
+		FB6933021AE4ED1A0013BFC9 /* SRDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRDHTTPClient.h; sourceTree = "<group>"; };
+		FB6933031AE4ED1A0013BFC9 /* SRDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRDHTTPClient.m; sourceTree = "<group>"; };
+		FB6933101AE4ED900013BFC9 /* LogAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogAdapter.h; sourceTree = "<group>"; };
+		FB6933111AE4ED900013BFC9 /* LogAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogAdapter.m; sourceTree = "<group>"; };
+		FB6933141AE4F0300013BFC9 /* sotoConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sotoConfig.plist; sourceTree = "<group>"; };
+		FBD43C1D1AE8C95700EA63B6 /* CLIColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLIColor.h; sourceTree = "<group>"; };
+		FBD43C1E1AE8C95700EA63B6 /* CLIColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLIColor.m; sourceTree = "<group>"; };
+		FBD43C1F1AE8C95700EA63B6 /* CocoaLumberjack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaLumberjack.h; sourceTree = "<group>"; };
+		FBD43C201AE8C95700EA63B6 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		FBD43C211AE8C95700EA63B6 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		FBD43C221AE8C95700EA63B6 /* DDASLLogCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogCapture.h; sourceTree = "<group>"; };
+		FBD43C231AE8C95700EA63B6 /* DDASLLogCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogCapture.m; sourceTree = "<group>"; };
+		FBD43C241AE8C95700EA63B6 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		FBD43C251AE8C95700EA63B6 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		FBD43C261AE8C95700EA63B6 /* DDAssertMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAssertMacros.h; sourceTree = "<group>"; };
+		FBD43C271AE8C95700EA63B6 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		FBD43C281AE8C95700EA63B6 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		FBD43C291AE8C95700EA63B6 /* DDLegacyMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLegacyMacros.h; sourceTree = "<group>"; };
+		FBD43C2A1AE8C95700EA63B6 /* DDLog+LOGV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDLog+LOGV.h"; sourceTree = "<group>"; };
+		FBD43C2B1AE8C95700EA63B6 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		FBD43C2C1AE8C95700EA63B6 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		FBD43C2D1AE8C95700EA63B6 /* DDLogMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLogMacros.h; sourceTree = "<group>"; };
+		FBD43C2E1AE8C95700EA63B6 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		FBD43C2F1AE8C95700EA63B6 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		FBD43C311AE8C95700EA63B6 /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		FBD43C321AE8C95700EA63B6 /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		FBD43C331AE8C95700EA63B6 /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		FBD43C341AE8C95700EA63B6 /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		FBD43C351AE8C95700EA63B6 /* DDMultiFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMultiFormatter.h; sourceTree = "<group>"; };
+		FBD43C361AE8C95700EA63B6 /* DDMultiFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMultiFormatter.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB6932AC1AE4EB130013BFC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222D0A821B4FB24C001C785E /* AdSupport.framework in Frameworks */,
+				223834D11B4F6CB90041EFB0 /* libz.dylib in Frameworks */,
+				223834CF1B4F6CAA0041EFB0 /* SystemConfiguration.framework in Frameworks */,
+				223834CD1B4F6C9F0041EFB0 /* CoreData.framework in Frameworks */,
+				223834C91B4F6B1A0041EFB0 /* libsqlite3.dylib in Frameworks */,
+				223834BB1B4F68D90041EFB0 /* libAdIdAccess.a in Frameworks */,
+				223834BC1B4F68D90041EFB0 /* libGoogleAnalyticsServices.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB6932B81AE4EB130013BFC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB6932BC1AE4EB130013BFC9 /* LogDomain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		223833D11B4F68D90041EFB0 /* GoogleAnalyticsServices */ = {
+			isa = PBXGroup;
+			children = (
+				222D0A861B4FBCE9001C785E /* GoogleService-Info.plist */,
+				223833D21B4F68D90041EFB0 /* GoogleAnalytics */,
+				2238340B1B4F68D90041EFB0 /* GoogleTagManager */,
+				2238344D1B4F68D90041EFB0 /* libAdIdAccess.a */,
+				2238344E1B4F68D90041EFB0 /* libGoogleAnalyticsServices.a */,
+				2238344F1B4F68D90041EFB0 /* Readme.txt */,
+			);
+			path = GoogleAnalyticsServices;
+			sourceTree = "<group>";
+		};
+		223833D21B4F68D90041EFB0 /* GoogleAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				223833D31B4F68D90041EFB0 /* Changelog.txt */,
+				223833FE1B4F68D90041EFB0 /* Library */,
+				2238340A1B4F68D90041EFB0 /* Readme.txt */,
+			);
+			path = GoogleAnalytics;
+			sourceTree = "<group>";
+		};
+		223833FE1B4F68D90041EFB0 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				223833FF1B4F68D90041EFB0 /* GAI.h */,
+				223834001B4F68D90041EFB0 /* GAIDictionaryBuilder.h */,
+				223834011B4F68D90041EFB0 /* GAIEcommerceFields.h */,
+				223834021B4F68D90041EFB0 /* GAIEcommerceProduct.h */,
+				223834031B4F68D90041EFB0 /* GAIEcommerceProductAction.h */,
+				223834041B4F68D90041EFB0 /* GAIEcommercePromotion.h */,
+				223834051B4F68D90041EFB0 /* GAIFields.h */,
+				223834061B4F68D90041EFB0 /* GAIHeader.h */,
+				223834071B4F68D90041EFB0 /* GAILogger.h */,
+				223834081B4F68D90041EFB0 /* GAITrackedViewController.h */,
+				223834091B4F68D90041EFB0 /* GAITracker.h */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		2238340B1B4F68D90041EFB0 /* GoogleTagManager */ = {
+			isa = PBXGroup;
+			children = (
+				2238340C1B4F68D90041EFB0 /* Changelog.txt */,
+				223834451B4F68D90041EFB0 /* Library */,
+				2238344C1B4F68D90041EFB0 /* Readme.txt */,
+			);
+			path = GoogleTagManager;
+			sourceTree = "<group>";
+		};
+		223834451B4F68D90041EFB0 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				223834461B4F68D90041EFB0 /* TAGContainer.h */,
+				223834471B4F68D90041EFB0 /* TAGContainerOpener.h */,
+				223834481B4F68D90041EFB0 /* TAGDataLayer.h */,
+				223834491B4F68D90041EFB0 /* TAGHeader.h */,
+				2238344A1B4F68D90041EFB0 /* TAGLogger.h */,
+				2238344B1B4F68D90041EFB0 /* TAGManager.h */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		FB6932A61AE4EB130013BFC9 = {
+			isa = PBXGroup;
+			children = (
+				222D0A811B4FB24C001C785E /* AdSupport.framework */,
+				FB6932B21AE4EB130013BFC9 /* LogDomain */,
+				FB6932BF1AE4EB130013BFC9 /* LogDomainTests */,
+				FB6932B11AE4EB130013BFC9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB6932B11AE4EB130013BFC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB6932B01AE4EB130013BFC9 /* LogDomain.framework */,
+				FB6932BB1AE4EB130013BFC9 /* LogDomainTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB6932B21AE4EB130013BFC9 /* LogDomain */ = {
+			isa = PBXGroup;
+			children = (
+				FB6932CC1AE4ED040013BFC9 /* Plugin */,
+				FB6932F41AE4ED1A0013BFC9 /* Constants */,
+				FB6932F71AE4ED1A0013BFC9 /* Model */,
+				FB6932FE1AE4ED1A0013BFC9 /* Model Manage */,
+				FB6933011AE4ED1A0013BFC9 /* Networking */,
+				FB6932B51AE4EB130013BFC9 /* LogDomain.h */,
+				FB6933101AE4ED900013BFC9 /* LogAdapter.h */,
+				FB6933111AE4ED900013BFC9 /* LogAdapter.m */,
+				FB6932B31AE4EB130013BFC9 /* Supporting Files */,
+			);
+			path = LogDomain;
+			sourceTree = "<group>";
+		};
+		FB6932B31AE4EB130013BFC9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB6933141AE4F0300013BFC9 /* sotoConfig.plist */,
+				FB6932B41AE4EB130013BFC9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB6932BF1AE4EB130013BFC9 /* LogDomainTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB6932C21AE4EB130013BFC9 /* LogDomainTests.m */,
+				FB6932C01AE4EB130013BFC9 /* Supporting Files */,
+			);
+			path = LogDomainTests;
+			sourceTree = "<group>";
+		};
+		FB6932C01AE4EB130013BFC9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB6932C11AE4EB130013BFC9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB6932CC1AE4ED040013BFC9 /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				223834D01B4F6CB90041EFB0 /* libz.dylib */,
+				223834CE1B4F6CAA0041EFB0 /* SystemConfiguration.framework */,
+				223834CC1B4F6C9F0041EFB0 /* CoreData.framework */,
+				223834CA1B4F6BA00041EFB0 /* Security.framework */,
+				223834C81B4F6B1A0041EFB0 /* libsqlite3.dylib */,
+				223833D11B4F68D90041EFB0 /* GoogleAnalyticsServices */,
+				FBD43C1A1AE8C95700EA63B6 /* CocoaLumberjack */,
+				FB6932CD1AE4ED040013BFC9 /* AFNetworking */,
+			);
+			path = Plugin;
+			sourceTree = "<group>";
+		};
+		FB6932CD1AE4ED040013BFC9 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				FB6932CE1AE4ED040013BFC9 /* AFHTTPRequestOperation.h */,
+				FB6932CF1AE4ED040013BFC9 /* AFHTTPRequestOperation.m */,
+				FB6932D01AE4ED040013BFC9 /* AFHTTPRequestOperationManager.h */,
+				FB6932D11AE4ED040013BFC9 /* AFHTTPRequestOperationManager.m */,
+				FB6932D21AE4ED040013BFC9 /* AFHTTPSessionManager.h */,
+				FB6932D31AE4ED040013BFC9 /* AFHTTPSessionManager.m */,
+				FB6932D41AE4ED040013BFC9 /* AFNetworking.h */,
+				FB6932D51AE4ED040013BFC9 /* AFNetworkReachabilityManager.h */,
+				FB6932D61AE4ED040013BFC9 /* AFNetworkReachabilityManager.m */,
+				FB6932D71AE4ED040013BFC9 /* AFSecurityPolicy.h */,
+				FB6932D81AE4ED040013BFC9 /* AFSecurityPolicy.m */,
+				FB6932D91AE4ED040013BFC9 /* AFURLConnectionOperation.h */,
+				FB6932DA1AE4ED040013BFC9 /* AFURLConnectionOperation.m */,
+				FB6932DB1AE4ED040013BFC9 /* AFURLRequestSerialization.h */,
+				FB6932DC1AE4ED040013BFC9 /* AFURLRequestSerialization.m */,
+				FB6932DD1AE4ED040013BFC9 /* AFURLResponseSerialization.h */,
+				FB6932DE1AE4ED040013BFC9 /* AFURLResponseSerialization.m */,
+				FB6932DF1AE4ED040013BFC9 /* AFURLSessionManager.h */,
+				FB6932E01AE4ED040013BFC9 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		FB6932F41AE4ED1A0013BFC9 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FB6932F51AE4ED1A0013BFC9 /* SRDConstants.h */,
+				FB6932F61AE4ED1A0013BFC9 /* SRDConstants.m */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		FB6932F71AE4ED1A0013BFC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB6932F81AE4ED1A0013BFC9 /* SRDLogContent.h */,
+				FB6932F91AE4ED1A0013BFC9 /* SRDLogContent.m */,
+				FB6932FA1AE4ED1A0013BFC9 /* SRDRequestAPIObject.h */,
+				FB6932FB1AE4ED1A0013BFC9 /* SRDRequestAPIObject.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB6932FE1AE4ED1A0013BFC9 /* Model Manage */ = {
+			isa = PBXGroup;
+			children = (
+				FB6932FF1AE4ED1A0013BFC9 /* SRDLogStore.h */,
+				FB6933001AE4ED1A0013BFC9 /* SRDLogStore.m */,
+			);
+			path = "Model Manage";
+			sourceTree = "<group>";
+		};
+		FB6933011AE4ED1A0013BFC9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				FB6933021AE4ED1A0013BFC9 /* SRDHTTPClient.h */,
+				FB6933031AE4ED1A0013BFC9 /* SRDHTTPClient.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		FBD43C1A1AE8C95700EA63B6 /* CocoaLumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				FBD43C1B1AE8C95700EA63B6 /* Classes */,
+			);
+			path = CocoaLumberjack;
+			sourceTree = "<group>";
+		};
+		FBD43C1B1AE8C95700EA63B6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FBD43C1C1AE8C95700EA63B6 /* CLI */,
+				FBD43C1F1AE8C95700EA63B6 /* CocoaLumberjack.h */,
+				FBD43C201AE8C95700EA63B6 /* DDAbstractDatabaseLogger.h */,
+				FBD43C211AE8C95700EA63B6 /* DDAbstractDatabaseLogger.m */,
+				FBD43C221AE8C95700EA63B6 /* DDASLLogCapture.h */,
+				FBD43C231AE8C95700EA63B6 /* DDASLLogCapture.m */,
+				FBD43C241AE8C95700EA63B6 /* DDASLLogger.h */,
+				FBD43C251AE8C95700EA63B6 /* DDASLLogger.m */,
+				FBD43C261AE8C95700EA63B6 /* DDAssertMacros.h */,
+				FBD43C271AE8C95700EA63B6 /* DDFileLogger.h */,
+				FBD43C281AE8C95700EA63B6 /* DDFileLogger.m */,
+				FBD43C291AE8C95700EA63B6 /* DDLegacyMacros.h */,
+				FBD43C2A1AE8C95700EA63B6 /* DDLog+LOGV.h */,
+				FBD43C2B1AE8C95700EA63B6 /* DDLog.h */,
+				FBD43C2C1AE8C95700EA63B6 /* DDLog.m */,
+				FBD43C2D1AE8C95700EA63B6 /* DDLogMacros.h */,
+				FBD43C2E1AE8C95700EA63B6 /* DDTTYLogger.h */,
+				FBD43C2F1AE8C95700EA63B6 /* DDTTYLogger.m */,
+				FBD43C301AE8C95700EA63B6 /* Extensions */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FBD43C1C1AE8C95700EA63B6 /* CLI */ = {
+			isa = PBXGroup;
+			children = (
+				FBD43C1D1AE8C95700EA63B6 /* CLIColor.h */,
+				FBD43C1E1AE8C95700EA63B6 /* CLIColor.m */,
+			);
+			path = CLI;
+			sourceTree = "<group>";
+		};
+		FBD43C301AE8C95700EA63B6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FBD43C311AE8C95700EA63B6 /* DDContextFilterLogFormatter.h */,
+				FBD43C321AE8C95700EA63B6 /* DDContextFilterLogFormatter.m */,
+				FBD43C331AE8C95700EA63B6 /* DDDispatchQueueLogFormatter.h */,
+				FBD43C341AE8C95700EA63B6 /* DDDispatchQueueLogFormatter.m */,
+				FBD43C351AE8C95700EA63B6 /* DDMultiFormatter.h */,
+				FBD43C361AE8C95700EA63B6 /* DDMultiFormatter.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FB6932AD1AE4EB130013BFC9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB6933061AE4ED1A0013BFC9 /* SRDLogContent.h in Headers */,
+				2238347A1B4F68D90041EFB0 /* GAIEcommercePromotion.h in Headers */,
+				FB6933041AE4ED1A0013BFC9 /* SRDConstants.h in Headers */,
+				FB6932F21AE4ED040013BFC9 /* AFURLSessionManager.h in Headers */,
+				2238347B1B4F68D90041EFB0 /* GAIFields.h in Headers */,
+				FBD43C471AE8C95700EA63B6 /* DDLogMacros.h in Headers */,
+				FB6933121AE4ED900013BFC9 /* LogAdapter.h in Headers */,
+				FBD43C3E1AE8C95700EA63B6 /* DDASLLogger.h in Headers */,
+				FBD43C4C1AE8C95700EA63B6 /* DDDispatchQueueLogFormatter.h in Headers */,
+				FBD43C481AE8C95700EA63B6 /* DDTTYLogger.h in Headers */,
+				FB5FAA161AE78924001B2FDA /* SRDConstants.m in Headers */,
+				FB6932EE1AE4ED040013BFC9 /* AFURLRequestSerialization.h in Headers */,
+				FB6933081AE4ED1A0013BFC9 /* SRDRequestAPIObject.h in Headers */,
+				223834751B4F68D90041EFB0 /* GAI.h in Headers */,
+				223834B91B4F68D90041EFB0 /* TAGManager.h in Headers */,
+				FBD43C441AE8C95700EA63B6 /* DDLog+LOGV.h in Headers */,
+				223834B51B4F68D90041EFB0 /* TAGContainerOpener.h in Headers */,
+				FBD43C3A1AE8C95700EA63B6 /* DDAbstractDatabaseLogger.h in Headers */,
+				223834B71B4F68D90041EFB0 /* TAGHeader.h in Headers */,
+				FB6932B61AE4EB130013BFC9 /* LogDomain.h in Headers */,
+				223834771B4F68D90041EFB0 /* GAIEcommerceFields.h in Headers */,
+				223834791B4F68D90041EFB0 /* GAIEcommerceProductAction.h in Headers */,
+				223834B81B4F68D90041EFB0 /* TAGLogger.h in Headers */,
+				223834B41B4F68D90041EFB0 /* TAGContainer.h in Headers */,
+				FBD43C391AE8C95700EA63B6 /* CocoaLumberjack.h in Headers */,
+				FBD43C371AE8C95700EA63B6 /* CLIColor.h in Headers */,
+				223834761B4F68D90041EFB0 /* GAIDictionaryBuilder.h in Headers */,
+				FBD43C431AE8C95700EA63B6 /* DDLegacyMacros.h in Headers */,
+				FB6932E11AE4ED040013BFC9 /* AFHTTPRequestOperation.h in Headers */,
+				FBD43C401AE8C95700EA63B6 /* DDAssertMacros.h in Headers */,
+				223834781B4F68D90041EFB0 /* GAIEcommerceProduct.h in Headers */,
+				FB6932E51AE4ED040013BFC9 /* AFHTTPSessionManager.h in Headers */,
+				FBD43C4E1AE8C95700EA63B6 /* DDMultiFormatter.h in Headers */,
+				2238347F1B4F68D90041EFB0 /* GAITracker.h in Headers */,
+				2238347C1B4F68D90041EFB0 /* GAIHeader.h in Headers */,
+				2238347D1B4F68D90041EFB0 /* GAILogger.h in Headers */,
+				FB6932EC1AE4ED040013BFC9 /* AFURLConnectionOperation.h in Headers */,
+				FB6932E81AE4ED040013BFC9 /* AFNetworkReachabilityManager.h in Headers */,
+				FBD43C3C1AE8C95700EA63B6 /* DDASLLogCapture.h in Headers */,
+				223834B61B4F68D90041EFB0 /* TAGDataLayer.h in Headers */,
+				FB69330E1AE4ED1A0013BFC9 /* SRDHTTPClient.h in Headers */,
+				FBD43C411AE8C95700EA63B6 /* DDFileLogger.h in Headers */,
+				2238347E1B4F68D90041EFB0 /* GAITrackedViewController.h in Headers */,
+				FB69330C1AE4ED1A0013BFC9 /* SRDLogStore.h in Headers */,
+				FB6932EA1AE4ED040013BFC9 /* AFSecurityPolicy.h in Headers */,
+				FB6932E31AE4ED040013BFC9 /* AFHTTPRequestOperationManager.h in Headers */,
+				FBD43C4A1AE8C95700EA63B6 /* DDContextFilterLogFormatter.h in Headers */,
+				FB6932E71AE4ED040013BFC9 /* AFNetworking.h in Headers */,
+				FB6932F01AE4ED040013BFC9 /* AFURLResponseSerialization.h in Headers */,
+				FBD43C451AE8C95700EA63B6 /* DDLog.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FB6932AF1AE4EB130013BFC9 /* LogDomain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB6932C61AE4EB130013BFC9 /* Build configuration list for PBXNativeTarget "LogDomain" */;
+			buildPhases = (
+				FB6932AB1AE4EB130013BFC9 /* Sources */,
+				FB6932AC1AE4EB130013BFC9 /* Frameworks */,
+				FB6932AD1AE4EB130013BFC9 /* Headers */,
+				FB6932AE1AE4EB130013BFC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LogDomain;
+			productName = LogDomain;
+			productReference = FB6932B01AE4EB130013BFC9 /* LogDomain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FB6932BA1AE4EB130013BFC9 /* LogDomainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB6932C91AE4EB130013BFC9 /* Build configuration list for PBXNativeTarget "LogDomainTests" */;
+			buildPhases = (
+				FB6932B71AE4EB130013BFC9 /* Sources */,
+				FB6932B81AE4EB130013BFC9 /* Frameworks */,
+				FB6932B91AE4EB130013BFC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB6932BE1AE4EB130013BFC9 /* PBXTargetDependency */,
+			);
+			name = LogDomainTests;
+			productName = LogDomainTests;
+			productReference = FB6932BB1AE4EB130013BFC9 /* LogDomainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB6932A71AE4EB130013BFC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Duong (Daryl) H. DANG";
+				TargetAttributes = {
+					FB6932AF1AE4EB130013BFC9 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					FB6932BA1AE4EB130013BFC9 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					FB69331B1AE4FD0C0013BFC9 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = FB6932AA1AE4EB130013BFC9 /* Build configuration list for PBXProject "LogDomain" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FB6932A61AE4EB130013BFC9;
+			productRefGroup = FB6932B11AE4EB130013BFC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB6932AF1AE4EB130013BFC9 /* LogDomain */,
+				FB6932BA1AE4EB130013BFC9 /* LogDomainTests */,
+				FB69331B1AE4FD0C0013BFC9 /* multiTarget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB6932AE1AE4EB130013BFC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB6933151AE4F0300013BFC9 /* sotoConfig.plist in Resources */,
+				223834801B4F68D90041EFB0 /* Readme.txt in Resources */,
+				223834811B4F68D90041EFB0 /* Changelog.txt in Resources */,
+				223834BD1B4F68D90041EFB0 /* Readme.txt in Resources */,
+				223834501B4F68D90041EFB0 /* Changelog.txt in Resources */,
+				223834BA1B4F68D90041EFB0 /* Readme.txt in Resources */,
+				222D0A871B4FBCE9001C785E /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB6932B91AE4EB130013BFC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FB69331F1AE4FD130013BFC9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules (from iphonesimulator build) to the copied framework directory\n#cp -R \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/Modules/Framework.swiftmodule/.\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/Modules/Framework.swiftmodule\"\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\" \"${PROJECT_DIR}\"\n\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB6932AB1AE4EB130013BFC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBD43C461AE8C95700EA63B6 /* DDLog.m in Sources */,
+				FB6932F31AE4ED040013BFC9 /* AFURLSessionManager.m in Sources */,
+				FB6932E61AE4ED040013BFC9 /* AFHTTPSessionManager.m in Sources */,
+				FB6932EB1AE4ED040013BFC9 /* AFSecurityPolicy.m in Sources */,
+				FB6932E41AE4ED040013BFC9 /* AFHTTPRequestOperationManager.m in Sources */,
+				FBD43C3F1AE8C95700EA63B6 /* DDASLLogger.m in Sources */,
+				FB6933071AE4ED1A0013BFC9 /* SRDLogContent.m in Sources */,
+				FB6932E91AE4ED040013BFC9 /* AFNetworkReachabilityManager.m in Sources */,
+				FB6933131AE4ED900013BFC9 /* LogAdapter.m in Sources */,
+				FB6933051AE4ED1A0013BFC9 /* SRDConstants.m in Sources */,
+				FBD43C4F1AE8C95700EA63B6 /* DDMultiFormatter.m in Sources */,
+				FBD43C421AE8C95700EA63B6 /* DDFileLogger.m in Sources */,
+				FBD43C4D1AE8C95700EA63B6 /* DDDispatchQueueLogFormatter.m in Sources */,
+				FB6932ED1AE4ED040013BFC9 /* AFURLConnectionOperation.m in Sources */,
+				FB6932EF1AE4ED040013BFC9 /* AFURLRequestSerialization.m in Sources */,
+				FB6932F11AE4ED040013BFC9 /* AFURLResponseSerialization.m in Sources */,
+				FB6932E21AE4ED040013BFC9 /* AFHTTPRequestOperation.m in Sources */,
+				FBD43C491AE8C95700EA63B6 /* DDTTYLogger.m in Sources */,
+				FBD43C4B1AE8C95700EA63B6 /* DDContextFilterLogFormatter.m in Sources */,
+				FBD43C3D1AE8C95700EA63B6 /* DDASLLogCapture.m in Sources */,
+				FBD43C381AE8C95700EA63B6 /* CLIColor.m in Sources */,
+				FB6933091AE4ED1A0013BFC9 /* SRDRequestAPIObject.m in Sources */,
+				FB69330D1AE4ED1A0013BFC9 /* SRDLogStore.m in Sources */,
+				FBD43C3B1AE8C95700EA63B6 /* DDAbstractDatabaseLogger.m in Sources */,
+				FB69330F1AE4ED1A0013BFC9 /* SRDHTTPClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB6932B71AE4EB130013BFC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB6932C31AE4EB130013BFC9 /* LogDomainTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB6932BE1AE4EB130013BFC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB6932AF1AE4EB130013BFC9 /* LogDomain */;
+			targetProxy = FB6932BD1AE4EB130013BFC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FB6932C41AE4EB130013BFC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FB6932C51AE4EB130013BFC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FB6932C71AE4EB130013BFC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LogDomain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LogDomain/Plugin/GoogleAnalyticsServices",
+					"$(PROJECT_DIR)/LogDomain/Plugin/GoogleAnalyticsServices/Library",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FB6932C81AE4EB130013BFC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LogDomain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LogDomain/Plugin/GoogleAnalyticsServices",
+					"$(PROJECT_DIR)/LogDomain/Plugin/GoogleAnalyticsServices/Library",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FB6932CA1AE4EB130013BFC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LogDomainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FB6932CB1AE4EB130013BFC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LogDomainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FB69331D1AE4FD0D0013BFC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FB69331E1AE4FD0D0013BFC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB6932AA1AE4EB130013BFC9 /* Build configuration list for PBXProject "LogDomain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB6932C41AE4EB130013BFC9 /* Debug */,
+				FB6932C51AE4EB130013BFC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB6932C61AE4EB130013BFC9 /* Build configuration list for PBXNativeTarget "LogDomain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB6932C71AE4EB130013BFC9 /* Debug */,
+				FB6932C81AE4EB130013BFC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB6932C91AE4EB130013BFC9 /* Build configuration list for PBXNativeTarget "LogDomainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB6932CA1AE4EB130013BFC9 /* Debug */,
+				FB6932CB1AE4EB130013BFC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB69331C1AE4FD0D0013BFC9 /* Build configuration list for PBXAggregateTarget "multiTarget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB69331D1AE4FD0D0013BFC9 /* Debug */,
+				FB69331E1AE4FD0D0013BFC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB6932A71AE4EB130013BFC9 /* Project object */;
+}

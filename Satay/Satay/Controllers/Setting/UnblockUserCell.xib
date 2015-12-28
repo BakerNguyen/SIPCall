@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="KGk-i7-Jjw" customClass="UnblockUserCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="c_empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="7OW-Oc-yUJ">
+                        <rect key="frame" x="8" y="9" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="Ely-t6-2eD"/>
+                            <constraint firstAttribute="width" constant="45" id="Gxq-nb-bth"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i02-L6-die">
+                        <rect key="frame" x="66" y="21" width="246" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d1t-H5-cgH">
+                        <rect key="frame" x="66" y="62" width="254" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="htE-e8-Yvv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7OW-Oc-yUJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="2Td-a6-Ggs"/>
+                    <constraint firstAttribute="centerY" secondItem="i02-L6-die" secondAttribute="centerY" id="ENz-KF-bLU"/>
+                    <constraint firstAttribute="bottom" secondItem="d1t-H5-cgH" secondAttribute="bottom" id="OqV-9j-6Uv"/>
+                    <constraint firstItem="i02-L6-die" firstAttribute="leading" secondItem="d1t-H5-cgH" secondAttribute="leading" id="Qvi-gI-3dq"/>
+                    <constraint firstAttribute="trailing" secondItem="i02-L6-die" secondAttribute="trailing" constant="8" id="hLJ-EG-Q53"/>
+                    <constraint firstItem="i02-L6-die" firstAttribute="leading" secondItem="7OW-Oc-yUJ" secondAttribute="trailing" constant="13" id="kOC-gG-a1R"/>
+                    <constraint firstAttribute="trailing" secondItem="d1t-H5-cgH" secondAttribute="trailing" id="ll4-BN-2Xg"/>
+                    <constraint firstAttribute="centerY" secondItem="7OW-Oc-yUJ" secondAttribute="centerY" id="wzs-Jx-WE5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatar" destination="7OW-Oc-yUJ" id="qJi-pX-Ngs"/>
+                <outlet property="lblName" destination="i02-L6-die" id="elo-Ht-psP"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="154"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="c_empty.png" width="45" height="45"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

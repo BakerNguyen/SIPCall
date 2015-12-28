@@ -1,0 +1,6 @@
+framework module LogDomain {
+  umbrella header "LogDomain.h"
+
+  export *
+  module * { export * }
+}

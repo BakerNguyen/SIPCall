@@ -1,0 +1,69 @@
+//
+//  ChatDomainDefine.h
+//  ChatDomain
+//
+//  Created by MTouche on 2/2/15.
+//  Copyright (c) 2015 mTouche. All rights reserved.
+//
+
+#define MESSAGE_TYPE_TEXT @"txt"
+#define MESSAGE_TYPE_IMAGE @"img"
+#define MESSAGE_TYPE_VIDEO @"vid"
+#define MESSAGE_TYPE_AUDIO @"aud"
+
+#define MESSAGE_STATUS_PENDING @"PENDING"
+#define MESSAGE_STATUS_SENT @"SENT"
+#define MESSAGE_STATUS_DELIVERED @"DELIVERED"
+#define MESSAGE_STATUS_NOT_UPLOADED @"NOT_UPLOADED"
+#define MESSAGE_STATUS_UPLOADING @"UPLOADING"
+#define MESSAGE_STATUS_UPLOADED_FAILED @"UPLOAD FAILED"
+#define MESSAGE_STATUS_CONTENT_DELETED @"CONTENT DELETED"
+
+#define kBODY_MESSAGE_TYPE @"mt"
+#define kBODY_MESSAGE_CONTENT @"ct"
+#define kBODY_MESSAGE_SELF_DESTROY @"sd"
+#define kBODY_MESSAGE_THUMBNAIL @"tn"
+#define kBODY_MESSAGE_AES_KEY @"key"
+#define kBODY_MESSAGE_DOWNLOAD_URL @"du"
+#define kBODY_MESSAGE_FILESIZE @"fs"
+#define kBODY_MESSAGE_FILENAME @"fn"
+#define kBODY_MESSAGE_MIME_TYPE @"mime"
+
+#define kENC_SIGNAL @"ENC"
+#define kMSG_SEPARATOR @"$#$"
+#define kINFO_SEPARATOR @"^%^"
+#define kAES_SEPARATOR @"*@*"
+
+#define kBODY_MT_IDEN_XCHANGE_ADD @"iden_xchange_add"
+#define kBODY_MT_IDEN_XCHANGE_APPROVE @"iden_xchange_approve"
+#define kBODY_MT_IDEN_XCHANGE_ERROR @"iden_xchange_error"
+#define kBODY_MT_IDEN_XCHANGE_DENY @"iden_xchange_denied"
+#define kBODY_MT_CHANGE_MSISDN @"not_inv_msisdn"
+#define kBODY_MT_RESET_EMAIL @"not_inv_email_account"
+
+#define kBODY_MT_NOTI_GRP_CREATE @"NOT_GRP_CREATE"
+#define kBODY_MT_NOTI_GRP_ADD @"NOT_GRP_ADD"
+#define kBODY_MT_NOTI_GRP_JOIN @"NOT_GRP_JOIN"
+#define kBODY_MT_NOTI_GRP_LEFT @"NOT_GRP_LEFT"
+#define kBODY_MT_NOTI_GRP_KICK @"NOT_GRP_KICK"
+#define kBODY_MT_NOTI_GRP_CHG_NAME @"NOT_GRP_CHG_NAME"
+#define kBODY_MT_NOTI_GRP_CHG_LOGO @"NOT_GRP_CHG_LOGO"
+#define kBODY_MT_NOTI_CHANGE_DISPLAY_NAME @"NOT_DPN"
+#define kBODY_MT_NOTI_CHANGE_AVATAR @"NOT_AVT"
+#define kBODY_MT_NOTI_DELETE_CONTACT @"NOT_DLC"
+#define kBODY_MT_NOT_INV_EMAIL_ACCOUNT @"NOT_INV_EMAIL_ACCOUNT"
+#define kBODY_MT_NOT_EAC_RESET @"NOT_EAC_RESET"
+#define kBODY_MT_NOT_EAC_CHANGED @"NOT_EAC_CHANGED"
+#define kBODY_MT_NOT_INV_MSISDN @"NOT_INV_MSISDN"
+
+#define kAPI @"API"
+#define kAPI_VERSION @"API_VERSION"
+
+//Upload api param name
+#define kFROMJID @"FROMJID"
+#define kFROMHOST @"FROMHOST"
+#define kTOJID @"TOJID"
+#define kTOHOST @"TOHOST"
+#define kUPLOAD_TYPE @"UPLOAD_TYPE"
+#define kROOMID @"ROOMID"
+#define kUPLOAD_FILE @"UPLOAD_FILE"

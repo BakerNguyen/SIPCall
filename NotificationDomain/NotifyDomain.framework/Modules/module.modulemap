@@ -1,0 +1,6 @@
+framework module NotifyDomain {
+  umbrella header "NotifyDomain.h"
+
+  export *
+  module * { export * }
+}

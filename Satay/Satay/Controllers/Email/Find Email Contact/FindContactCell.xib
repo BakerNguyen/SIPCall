@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FindContactCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ContactCell" rowHeight="69" id="NCN-BA-bv0" customClass="FindContactCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NCN-BA-bv0" id="Tv5-Qs-OCB">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMz-oE-Xsg">
+                        <rect key="frame" x="77" y="14" width="193" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mjV-MN-UKb">
+                        <rect key="frame" x="77" y="35" width="198" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8g5-sz-RGi">
+                        <rect key="frame" x="10" y="9" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="9Ob-p7-90l"/>
+                            <constraint firstAttribute="width" constant="50" id="s1s-uH-o1B"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZ6-29-Qrz">
+                        <rect key="frame" x="280" y="24" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="HiQ-1P-jb1"/>
+                            <constraint firstAttribute="width" constant="20" id="wXX-Rc-J5D"/>
+                        </constraints>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="clickedBtnCheck:" destination="NCN-BA-bv0" eventType="touchUpInside" id="PEb-nk-9kl"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zc7-Wa-cGN">
+                        <rect key="frame" x="77" y="67" width="243" height="1"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="F80-nV-0ex"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DMz-oE-Xsg" firstAttribute="top" secondItem="Tv5-Qs-OCB" secondAttribute="top" constant="14" id="0UR-IJ-asO"/>
+                    <constraint firstItem="vZ6-29-Qrz" firstAttribute="leading" secondItem="DMz-oE-Xsg" secondAttribute="trailing" constant="10" id="C9E-Ft-ya6"/>
+                    <constraint firstItem="vZ6-29-Qrz" firstAttribute="leading" secondItem="mjV-MN-UKb" secondAttribute="trailing" constant="5" id="IiP-yp-7IS"/>
+                    <constraint firstItem="DMz-oE-Xsg" firstAttribute="leading" secondItem="Zc7-Wa-cGN" secondAttribute="leading" id="M6v-Cr-uF7"/>
+                    <constraint firstItem="mjV-MN-UKb" firstAttribute="top" secondItem="DMz-oE-Xsg" secondAttribute="bottom" constant="3" id="df4-et-jEI"/>
+                    <constraint firstItem="DMz-oE-Xsg" firstAttribute="leading" secondItem="mjV-MN-UKb" secondAttribute="leading" id="ig2-Zq-ILR"/>
+                    <constraint firstAttribute="centerY" secondItem="8g5-sz-RGi" secondAttribute="centerY" id="iuF-kf-Pca"/>
+                    <constraint firstAttribute="trailing" secondItem="vZ6-29-Qrz" secondAttribute="trailing" constant="20" id="kNS-Bu-hmv"/>
+                    <constraint firstAttribute="centerY" secondItem="vZ6-29-Qrz" secondAttribute="centerY" id="oAG-AO-vhJ"/>
+                    <constraint firstItem="8g5-sz-RGi" firstAttribute="leading" secondItem="Tv5-Qs-OCB" secondAttribute="leading" constant="10" id="pG9-YH-MAV"/>
+                    <constraint firstAttribute="trailing" secondItem="Zc7-Wa-cGN" secondAttribute="trailing" id="r2g-xR-7gS"/>
+                    <constraint firstAttribute="bottom" secondItem="Zc7-Wa-cGN" secondAttribute="bottom" id="rpg-4q-teg"/>
+                    <constraint firstItem="DMz-oE-Xsg" firstAttribute="leading" secondItem="8g5-sz-RGi" secondAttribute="trailing" constant="17" id="vbL-9W-LTa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contactAvatar" destination="8g5-sz-RGi" id="kB6-kM-AZW"/>
+                <outlet property="contactCheck" destination="vZ6-29-Qrz" id="qrg-pW-2cH"/>
+                <outlet property="lblMessage" destination="mjV-MN-UKb" id="ESa-Nu-v0d"/>
+                <outlet property="lblName" destination="DMz-oE-Xsg" id="AXW-r2-sAb"/>
+            </connections>
+            <point key="canvasLocation" x="250" y="203"/>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

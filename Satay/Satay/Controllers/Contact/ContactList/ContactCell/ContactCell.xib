@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="0.0" reuseIdentifier="FriendListCell" rowHeight="60" id="2" customClass="ContactCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2" id="mfF-6T-p5r">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="c_empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="11">
+                        <rect key="frame" x="10" y="8" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="QdI-Mc-dJr"/>
+                            <constraint firstAttribute="height" constant="45" id="Rwm-Y0-H5F"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3">
+                        <rect key="frame" x="65" y="58" width="256" height="1"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="c5p-m5-Cd9"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9">
+                        <rect key="frame" x="65" y="33" width="247" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4">
+                        <rect key="frame" x="65" y="13" width="247" height="20"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="9" secondAttribute="trailing" constant="8" id="31F-O9-Fiw"/>
+                    <constraint firstItem="9" firstAttribute="top" secondItem="4" secondAttribute="bottom" id="4AI-oL-kGM"/>
+                    <constraint firstItem="3" firstAttribute="leading" secondItem="9" secondAttribute="leading" id="8Ue-B6-fhU"/>
+                    <constraint firstAttribute="trailing" secondItem="4" secondAttribute="trailing" constant="8" id="MeS-Fz-CoC"/>
+                    <constraint firstAttribute="trailing" secondItem="3" secondAttribute="trailing" constant="-1" id="Syc-f4-GpS"/>
+                    <constraint firstAttribute="centerY" secondItem="11" secondAttribute="centerY" constant="-1" id="Wqu-SD-bUJ"/>
+                    <constraint firstItem="11" firstAttribute="leading" secondItem="mfF-6T-p5r" secondAttribute="leadingMargin" constant="2" id="YFg-gV-TO7"/>
+                    <constraint firstAttribute="bottom" secondItem="3" secondAttribute="bottom" id="lhO-v3-81A"/>
+                    <constraint firstItem="4" firstAttribute="top" secondItem="mfF-6T-p5r" secondAttribute="top" constant="13" id="rNo-SW-tXF"/>
+                    <constraint firstItem="4" firstAttribute="leading" secondItem="11" secondAttribute="trailing" constant="10" id="wfH-4P-mnK"/>
+                    <constraint firstItem="9" firstAttribute="leading" secondItem="4" secondAttribute="leading" id="xCc-JI-0t1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgAvatar" destination="11" id="12"/>
+                <outlet property="lblBuddyName" destination="4" id="5"/>
+                <outlet property="lblStatus" destination="9" id="10"/>
+                <outlet property="separateView" destination="3" id="6"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="c_empty.png" width="45" height="45"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

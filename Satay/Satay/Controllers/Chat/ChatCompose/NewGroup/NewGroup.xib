@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewGroup">
+            <connections>
+                <outlet property="lblCounter" destination="lHX-rf-qd7" id="RWX-gq-yNi"/>
+                <outlet property="navBar" destination="7f2-TK-7ZX" id="LGC-uA-KFR"/>
+                <outlet property="searchContact" destination="jac-34-4Ij" id="hvY-lI-2Xr"/>
+                <outlet property="tblFriends" destination="McL-qc-MNs" id="jBv-8o-iuZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="McL-qc-MNs">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Search" id="jac-34-4Ij">
+                        <rect key="frame" x="0.0" y="262" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </searchBar>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="fTe-1o-J73"/>
+                        <outlet property="delegate" destination="-1" id="zcc-uK-8dG"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="McL-qc-MNs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Fgp-J4-k5g"/>
+                <constraint firstAttribute="trailing" secondItem="McL-qc-MNs" secondAttribute="trailing" id="K7d-Sb-KNw"/>
+                <constraint firstAttribute="bottom" secondItem="McL-qc-MNs" secondAttribute="bottom" id="cUb-4R-Vta"/>
+                <constraint firstItem="McL-qc-MNs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dwh-JP-H9q"/>
+            </constraints>
+            <point key="canvasLocation" x="223" y="323"/>
+        </view>
+        <view userInteractionEnabled="NO" contentMode="scaleToFill" id="7f2-TK-7ZX" userLabel="NewGroupBar" customClass="NewGroupBar">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4K0-WP-J0B">
+                    <rect key="frame" x="92" y="11" width="137" height="22"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20/20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHX-rf-qd7">
+                            <rect key="frame" x="97" y="2" width="40" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.95294117649999999" green="0.69411764710000001" blue="0.16078431369999999" alpha="1" colorSpace="deviceRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Group" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOM-GG-ZOz">
+                            <rect key="frame" x="0.0" y="1" width="89" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" red="0.95294117649999999" green="0.69411764710000001" blue="0.16078431369999999" alpha="1" colorSpace="deviceRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerY" secondItem="GOM-GG-ZOz" secondAttribute="centerY" id="1s1-Jw-cgQ"/>
+                        <constraint firstItem="lHX-rf-qd7" firstAttribute="leading" secondItem="GOM-GG-ZOz" secondAttribute="trailing" constant="8" id="86m-Fd-eYO"/>
+                        <constraint firstAttribute="centerY" secondItem="lHX-rf-qd7" secondAttribute="centerY" id="OdR-xn-9it"/>
+                        <constraint firstItem="GOM-GG-ZOz" firstAttribute="leading" secondItem="4K0-WP-J0B" secondAttribute="leading" id="Ui6-kl-t1U"/>
+                        <constraint firstAttribute="trailing" secondItem="lHX-rf-qd7" secondAttribute="trailing" id="Xz2-Rz-3hs"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="4K0-WP-J0B" secondAttribute="centerX" id="BtA-QA-kWM"/>
+                <constraint firstAttribute="bottom" secondItem="4K0-WP-J0B" secondAttribute="bottom" constant="11" id="ESQ-gW-rsQ"/>
+                <constraint firstItem="4K0-WP-J0B" firstAttribute="top" secondItem="7f2-TK-7ZX" secondAttribute="top" constant="11" id="Yh7-1y-OQx"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="223" y="-55"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

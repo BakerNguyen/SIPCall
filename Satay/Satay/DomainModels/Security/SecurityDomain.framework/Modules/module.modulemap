@@ -1,0 +1,6 @@
+framework module SecurityDomain {
+  umbrella header "SecurityDomain.h"
+
+  export *
+  module * { export * }
+}

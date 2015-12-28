@@ -1,0 +1,6 @@
+framework module ContactDomain {
+  umbrella header "ContactDomain.h"
+
+  export *
+  module * { export * }
+}

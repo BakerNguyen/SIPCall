@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		036442721A5E5F9D00CAE5CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 036442711A5E5F9D00CAE5CD /* main.m */; };
+		036442751A5E5F9D00CAE5CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 036442741A5E5F9D00CAE5CD /* AppDelegate.m */; };
+		036442781A5E5F9D00CAE5CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 036442771A5E5F9D00CAE5CD /* ViewController.m */; };
+		0364427B1A5E5F9D00CAE5CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 036442791A5E5F9D00CAE5CD /* Main.storyboard */; };
+		0364427D1A5E5F9D00CAE5CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0364427C1A5E5F9D00CAE5CD /* Images.xcassets */; };
+		036442801A5E5F9D00CAE5CD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0364427E1A5E5F9D00CAE5CD /* LaunchScreen.xib */; };
+		0364428C1A5E5F9E00CAE5CD /* EmailDomainTestingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0364428B1A5E5F9E00CAE5CD /* EmailDomainTestingTests.m */; };
+		036442961A5E5FC000CAE5CD /* EmailDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036442951A5E5FC000CAE5CD /* EmailDomain.framework */; };
+		036442971A5E5FC000CAE5CD /* EmailDomain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 036442951A5E5FC000CAE5CD /* EmailDomain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		036442861A5E5F9E00CAE5CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 036442641A5E5F9D00CAE5CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0364426B1A5E5F9D00CAE5CD;
+			remoteInfo = EmailDomainTesting;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		036442981A5E5FC000CAE5CD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				036442971A5E5FC000CAE5CD /* EmailDomain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0364426C1A5E5F9D00CAE5CD /* EmailDomainTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmailDomainTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		036442701A5E5F9D00CAE5CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		036442711A5E5F9D00CAE5CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		036442731A5E5F9D00CAE5CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		036442741A5E5F9D00CAE5CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		036442761A5E5F9D00CAE5CD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		036442771A5E5F9D00CAE5CD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0364427A1A5E5F9D00CAE5CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0364427C1A5E5F9D00CAE5CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0364427F1A5E5F9D00CAE5CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		036442851A5E5F9E00CAE5CD /* EmailDomainTestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmailDomainTestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0364428A1A5E5F9E00CAE5CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0364428B1A5E5F9E00CAE5CD /* EmailDomainTestingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmailDomainTestingTests.m; sourceTree = "<group>"; };
+		036442951A5E5FC000CAE5CD /* EmailDomain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EmailDomain.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		036442691A5E5F9D00CAE5CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				036442961A5E5FC000CAE5CD /* EmailDomain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		036442821A5E5F9E00CAE5CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		036442631A5E5F9D00CAE5CD = {
+			isa = PBXGroup;
+			children = (
+				036442951A5E5FC000CAE5CD /* EmailDomain.framework */,
+				0364426E1A5E5F9D00CAE5CD /* EmailDomainTesting */,
+				036442881A5E5F9E00CAE5CD /* EmailDomainTestingTests */,
+				0364426D1A5E5F9D00CAE5CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0364426D1A5E5F9D00CAE5CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0364426C1A5E5F9D00CAE5CD /* EmailDomainTesting.app */,
+				036442851A5E5F9E00CAE5CD /* EmailDomainTestingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0364426E1A5E5F9D00CAE5CD /* EmailDomainTesting */ = {
+			isa = PBXGroup;
+			children = (
+				036442731A5E5F9D00CAE5CD /* AppDelegate.h */,
+				036442741A5E5F9D00CAE5CD /* AppDelegate.m */,
+				036442761A5E5F9D00CAE5CD /* ViewController.h */,
+				036442771A5E5F9D00CAE5CD /* ViewController.m */,
+				036442791A5E5F9D00CAE5CD /* Main.storyboard */,
+				0364427C1A5E5F9D00CAE5CD /* Images.xcassets */,
+				0364427E1A5E5F9D00CAE5CD /* LaunchScreen.xib */,
+				0364426F1A5E5F9D00CAE5CD /* Supporting Files */,
+			);
+			path = EmailDomainTesting;
+			sourceTree = "<group>";
+		};
+		0364426F1A5E5F9D00CAE5CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				036442701A5E5F9D00CAE5CD /* Info.plist */,
+				036442711A5E5F9D00CAE5CD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		036442881A5E5F9E00CAE5CD /* EmailDomainTestingTests */ = {
+			isa = PBXGroup;
+			children = (
+				0364428B1A5E5F9E00CAE5CD /* EmailDomainTestingTests.m */,
+				036442891A5E5F9E00CAE5CD /* Supporting Files */,
+			);
+			path = EmailDomainTestingTests;
+			sourceTree = "<group>";
+		};
+		036442891A5E5F9E00CAE5CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0364428A1A5E5F9E00CAE5CD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0364426B1A5E5F9D00CAE5CD /* EmailDomainTesting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0364428F1A5E5F9E00CAE5CD /* Build configuration list for PBXNativeTarget "EmailDomainTesting" */;
+			buildPhases = (
+				036442681A5E5F9D00CAE5CD /* Sources */,
+				036442691A5E5F9D00CAE5CD /* Frameworks */,
+				0364426A1A5E5F9D00CAE5CD /* Resources */,
+				036442981A5E5FC000CAE5CD /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmailDomainTesting;
+			productName = EmailDomainTesting;
+			productReference = 0364426C1A5E5F9D00CAE5CD /* EmailDomainTesting.app */;
+			productType = "com.apple.product-type.application";
+		};
+		036442841A5E5F9E00CAE5CD /* EmailDomainTestingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 036442921A5E5F9E00CAE5CD /* Build configuration list for PBXNativeTarget "EmailDomainTestingTests" */;
+			buildPhases = (
+				036442811A5E5F9E00CAE5CD /* Sources */,
+				036442821A5E5F9E00CAE5CD /* Frameworks */,
+				036442831A5E5F9E00CAE5CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				036442871A5E5F9E00CAE5CD /* PBXTargetDependency */,
+			);
+			name = EmailDomainTestingTests;
+			productName = EmailDomainTestingTests;
+			productReference = 036442851A5E5F9E00CAE5CD /* EmailDomainTestingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		036442641A5E5F9D00CAE5CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = enclave;
+				TargetAttributes = {
+					0364426B1A5E5F9D00CAE5CD = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					036442841A5E5F9E00CAE5CD = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 0364426B1A5E5F9D00CAE5CD;
+					};
+				};
+			};
+			buildConfigurationList = 036442671A5E5F9D00CAE5CD /* Build configuration list for PBXProject "EmailDomainTesting" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 036442631A5E5F9D00CAE5CD;
+			productRefGroup = 0364426D1A5E5F9D00CAE5CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0364426B1A5E5F9D00CAE5CD /* EmailDomainTesting */,
+				036442841A5E5F9E00CAE5CD /* EmailDomainTestingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0364426A1A5E5F9D00CAE5CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0364427B1A5E5F9D00CAE5CD /* Main.storyboard in Resources */,
+				036442801A5E5F9D00CAE5CD /* LaunchScreen.xib in Resources */,
+				0364427D1A5E5F9D00CAE5CD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		036442831A5E5F9E00CAE5CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		036442681A5E5F9D00CAE5CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				036442781A5E5F9D00CAE5CD /* ViewController.m in Sources */,
+				036442751A5E5F9D00CAE5CD /* AppDelegate.m in Sources */,
+				036442721A5E5F9D00CAE5CD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		036442811A5E5F9E00CAE5CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0364428C1A5E5F9E00CAE5CD /* EmailDomainTestingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		036442871A5E5F9E00CAE5CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0364426B1A5E5F9D00CAE5CD /* EmailDomainTesting */;
+			targetProxy = 036442861A5E5F9E00CAE5CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		036442791A5E5F9D00CAE5CD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0364427A1A5E5F9D00CAE5CD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0364427E1A5E5F9D00CAE5CD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0364427F1A5E5F9D00CAE5CD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0364428D1A5E5F9E00CAE5CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0364428E1A5E5F9E00CAE5CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		036442901A5E5F9E00CAE5CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/EmailDomain.framework/Headers",
+				);
+				INFOPLIST_FILE = EmailDomainTesting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		036442911A5E5F9E00CAE5CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/EmailDomain.framework/Headers",
+				);
+				INFOPLIST_FILE = EmailDomainTesting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		036442931A5E5F9E00CAE5CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EmailDomainTestingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmailDomainTesting.app/EmailDomainTesting";
+			};
+			name = Debug;
+		};
+		036442941A5E5F9E00CAE5CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EmailDomainTestingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmailDomainTesting.app/EmailDomainTesting";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		036442671A5E5F9D00CAE5CD /* Build configuration list for PBXProject "EmailDomainTesting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0364428D1A5E5F9E00CAE5CD /* Debug */,
+				0364428E1A5E5F9E00CAE5CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0364428F1A5E5F9E00CAE5CD /* Build configuration list for PBXNativeTarget "EmailDomainTesting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				036442901A5E5F9E00CAE5CD /* Debug */,
+				036442911A5E5F9E00CAE5CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		036442921A5E5F9E00CAE5CD /* Build configuration list for PBXNativeTarget "EmailDomainTestingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				036442931A5E5F9E00CAE5CD /* Debug */,
+				036442941A5E5F9E00CAE5CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 036442641A5E5F9D00CAE5CD /* Project object */;
+}

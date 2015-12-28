@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LogInViewCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="LogInViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="LogInViewCell" rowHeight="56" id="6sa-b5-F0R" customClass="LogInViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6sa-b5-F0R" id="THT-lH-5jd">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bRp-un-oSr">
+                        <rect key="frame" x="4" y="4" width="312" height="47"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mHu-Lj-K6t">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="2"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="pS9-tb-ZpD"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b4S-nz-1hA">
+                        <rect key="frame" x="0.0" y="51" width="320" height="2"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="kZd-Ig-sQn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="bRp-un-oSr" secondAttribute="bottom" constant="4" id="0s0-dh-05L"/>
+                    <constraint firstAttribute="trailing" secondItem="mHu-Lj-K6t" secondAttribute="trailing" id="2pI-by-wyG"/>
+                    <constraint firstItem="b4S-nz-1hA" firstAttribute="leading" secondItem="THT-lH-5jd" secondAttribute="leading" id="7q1-A3-kZD"/>
+                    <constraint firstItem="mHu-Lj-K6t" firstAttribute="leading" secondItem="THT-lH-5jd" secondAttribute="leading" id="HxN-uZ-V2m"/>
+                    <constraint firstItem="mHu-Lj-K6t" firstAttribute="top" secondItem="THT-lH-5jd" secondAttribute="top" id="Kgw-uG-9Rd"/>
+                    <constraint firstAttribute="bottom" secondItem="b4S-nz-1hA" secondAttribute="bottom" constant="2" id="Mp9-pn-JSI"/>
+                    <constraint firstAttribute="trailing" secondItem="b4S-nz-1hA" secondAttribute="trailing" id="VvH-FN-BmF"/>
+                    <constraint firstItem="bRp-un-oSr" firstAttribute="top" secondItem="THT-lH-5jd" secondAttribute="top" constant="4" id="Xwd-re-0FN"/>
+                    <constraint firstAttribute="trailing" secondItem="bRp-un-oSr" secondAttribute="trailing" constant="4" id="YTj-a4-4gy"/>
+                    <constraint firstItem="bRp-un-oSr" firstAttribute="leading" secondItem="THT-lH-5jd" secondAttribute="leading" constant="4" id="zn2-YM-avI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="txtLogin" destination="bRp-un-oSr" id="0gI-ut-pKD"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

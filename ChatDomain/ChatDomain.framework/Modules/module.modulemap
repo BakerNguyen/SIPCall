@@ -1,0 +1,6 @@
+framework module ChatDomain {
+  umbrella header "ChatDomain.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module SIPDomain {
+  umbrella header "SIPDomain.h"
+
+  export *
+  module * { export * }
+}

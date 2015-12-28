@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VoiceCallView">
+            <connections>
+                <outlet property="btnEndCall" destination="T2q-dg-xZR" id="CW9-dO-c4C"/>
+                <outlet property="btnMinimize" destination="FBe-wX-Pxn" id="RK6-qy-wmS"/>
+                <outlet property="btnMute" destination="BEe-yS-Ynm" id="gen-Hw-K7f"/>
+                <outlet property="btnSpeaker" destination="e7U-8M-KL1" id="1nj-iX-vvi"/>
+                <outlet property="imgAvatar" destination="1Gt-L4-cQX" id="XSB-yt-kUt"/>
+                <outlet property="lblDuration" destination="bTq-zt-BW3" id="aSQ-CC-33b"/>
+                <outlet property="lblFriendName" destination="wX5-Nw-wkL" id="Ns6-1X-LoG"/>
+                <outlet property="lblNetworkQuality" destination="zFH-rf-SO4" id="1vd-fb-8gj"/>
+                <outlet property="lblNetworkStatus" destination="ZUZ-e5-ohj" id="v9y-hA-CYg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="c_empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Gt-L4-cQX">
+                    <rect key="frame" x="98" y="153" width="125" height="125"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="125" id="PHK-pG-6La"/>
+                        <constraint firstAttribute="height" constant="125" id="Pqc-CJ-Rkb"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friend's Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wX5-Nw-wkL">
+                    <rect key="frame" x="5" y="41" width="310" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" red="0.95294117649999999" green="0.69411764710000001" blue="0.16078431369999999" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="speaker" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEe-yS-Ynm">
+                    <rect key="frame" x="25" y="312" width="80" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="ZS0-QF-Ivh"/>
+                        <constraint firstAttribute="height" constant="72" id="mEU-gR-1HG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <state key="normal" title="Mute" image="call_i_speaker.png">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" title="Mute" image="call_i_speaker_t.png"/>
+                    <connections>
+                        <action selector="action_mute:" destination="-1" eventType="touchUpInside" id="Kqg-d4-Fpf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="mute" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7U-8M-KL1">
+                    <rect key="frame" x="120" y="312" width="80" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="g5p-xa-a97"/>
+                        <constraint firstAttribute="height" constant="72" id="kBJ-vD-9BC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Speaker" image="call_i_mute.png">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" title="Speaker" image="call_i_mute_t.png"/>
+                    <connections>
+                        <action selector="action_Speaker:" destination="-1" eventType="touchUpInside" id="WCL-a6-cLu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="minimize" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBe-wX-Pxn">
+                    <rect key="frame" x="215" y="312" width="80" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="72" id="M8Y-uv-ywt"/>
+                        <constraint firstAttribute="width" constant="80" id="eoQ-GZ-vIb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <state key="normal" title="Minimize" image="call_i_minimize.png">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="call_i_minimize_t.png"/>
+                    <state key="highlighted" title="Minimize" image="call_i_minimize_t.png"/>
+                    <connections>
+                        <action selector="action_Minimize:" destination="-1" eventType="touchUpInside" id="921-Tv-zrh"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calling..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTq-zt-BW3">
+                    <rect key="frame" x="128" y="77" width="64" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.3411764705882353" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CBk-hi-F6f">
+                    <rect key="frame" x="80" y="112" width="160" height="43"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Network Quality: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFH-rf-SO4">
+                            <rect key="frame" x="8" y="15" width="89" height="14"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="0.3411764706" green="0.3411764706" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Excellent" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUZ-e5-ohj">
+                            <rect key="frame" x="105" y="15" width="47" height="14"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="ZUZ-e5-ohj" firstAttribute="leading" secondItem="zFH-rf-SO4" secondAttribute="trailing" constant="8" id="9vc-Jg-ivq"/>
+                        <constraint firstItem="zFH-rf-SO4" firstAttribute="centerY" secondItem="ZUZ-e5-ohj" secondAttribute="centerY" id="D4z-qL-sri"/>
+                        <constraint firstAttribute="trailing" secondItem="ZUZ-e5-ohj" secondAttribute="trailing" constant="8" id="WZC-Tg-uOL"/>
+                        <constraint firstAttribute="centerY" secondItem="zFH-rf-SO4" secondAttribute="centerY" id="abA-wj-nA6"/>
+                        <constraint firstItem="zFH-rf-SO4" firstAttribute="leading" secondItem="CBk-hi-F6f" secondAttribute="leadingMargin" id="j8N-X6-pEP"/>
+                        <constraint firstItem="zFH-rf-SO4" firstAttribute="top" secondItem="CBk-hi-F6f" secondAttribute="top" constant="15" id="xEO-lW-bsd"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2q-dg-xZR">
+                    <rect key="frame" x="25" y="480" width="270" height="67"/>
+                    <color key="backgroundColor" red="0.98039215686274506" green="0.37647058823529411" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="67" id="xKN-uC-nDX"/>
+                    </constraints>
+                    <state key="normal" title="End Call">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="action_endCall:" destination="-1" eventType="touchUpInside" id="kAd-L8-FhR"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="T2q-dg-xZR" secondAttribute="trailing" constant="25" id="0b9-Mc-Lm0"/>
+                <constraint firstAttribute="centerX" secondItem="bTq-zt-BW3" secondAttribute="centerX" id="5un-4c-wi8"/>
+                <constraint firstItem="BEe-yS-Ynm" firstAttribute="centerY" secondItem="e7U-8M-KL1" secondAttribute="centerY" id="8Fm-aW-1kL"/>
+                <constraint firstItem="e7U-8M-KL1" firstAttribute="leading" secondItem="BEe-yS-Ynm" secondAttribute="trailing" constant="15" id="9MJ-2v-PX9"/>
+                <constraint firstItem="bTq-zt-BW3" firstAttribute="top" secondItem="wX5-Nw-wkL" secondAttribute="bottom" constant="12" id="Fzt-lw-QCN"/>
+                <constraint firstAttribute="centerX" secondItem="CBk-hi-F6f" secondAttribute="centerX" id="GQi-ib-PeN"/>
+                <constraint firstItem="zFH-rf-SO4" firstAttribute="top" secondItem="bTq-zt-BW3" secondAttribute="bottom" constant="30" id="Jy5-1S-QuX"/>
+                <constraint firstItem="e7U-8M-KL1" firstAttribute="top" secondItem="1Gt-L4-cQX" secondAttribute="bottom" constant="34" id="LXd-Nm-ymO"/>
+                <constraint firstItem="T2q-dg-xZR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="OJm-04-ECs"/>
+                <constraint firstAttribute="centerX" secondItem="1Gt-L4-cQX" secondAttribute="centerX" id="R2x-eA-mYL"/>
+                <constraint firstItem="CBk-hi-F6f" firstAttribute="centerX" secondItem="1Gt-L4-cQX" secondAttribute="centerX" id="Tnf-rG-TJi"/>
+                <constraint firstAttribute="bottom" secondItem="T2q-dg-xZR" secondAttribute="bottom" constant="21" id="Uny-Pn-b6J"/>
+                <constraint firstAttribute="trailing" secondItem="wX5-Nw-wkL" secondAttribute="trailing" constant="5" id="boC-4T-G9n"/>
+                <constraint firstItem="wX5-Nw-wkL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="41" id="g9Y-mi-kWb"/>
+                <constraint firstItem="CBk-hi-F6f" firstAttribute="centerX" secondItem="e7U-8M-KL1" secondAttribute="centerX" id="h1h-Ho-Kxq"/>
+                <constraint firstAttribute="centerX" secondItem="e7U-8M-KL1" secondAttribute="centerX" id="i6N-QI-fMo"/>
+                <constraint firstAttribute="centerX" secondItem="wX5-Nw-wkL" secondAttribute="centerX" id="o2n-YG-xV5"/>
+                <constraint firstItem="FBe-wX-Pxn" firstAttribute="leading" secondItem="e7U-8M-KL1" secondAttribute="trailing" constant="15" id="p5z-Wo-7kY"/>
+                <constraint firstItem="wX5-Nw-wkL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="uoA-w9-kIq"/>
+                <constraint firstItem="FBe-wX-Pxn" firstAttribute="centerY" secondItem="e7U-8M-KL1" secondAttribute="centerY" id="wO9-N3-VkQ"/>
+                <constraint firstItem="1Gt-L4-cQX" firstAttribute="top" secondItem="zFH-rf-SO4" secondAttribute="bottom" constant="12" id="zAv-0W-MXp"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="c_empty.png" width="45" height="45"/>
+        <image name="call_i_minimize.png" width="75" height="75"/>
+        <image name="call_i_minimize_t.png" width="75" height="75"/>
+        <image name="call_i_mute.png" width="75" height="75"/>
+        <image name="call_i_mute_t.png" width="75" height="75"/>
+        <image name="call_i_speaker.png" width="75" height="75"/>
+        <image name="call_i_speaker_t.png" width="75" height="75"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

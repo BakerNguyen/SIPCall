@@ -1,0 +1,16 @@
+//
+//  SettingTableViewCell.h
+//  Satay
+//
+//  Created by Duong (Daryl) H. DANG on 5/18/15.
+//  Copyright (c) 2015 enclave. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface SettingTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *lblTitle;
+@property (weak, nonatomic) IBOutlet UILabel *lblInfo;
+@property (weak, nonatomic) IBOutlet UISwitch *btnSwitch;
+
+@end

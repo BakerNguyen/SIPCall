@@ -1,0 +1,6 @@
+framework module SocialDomain {
+  umbrella header "SocialDomain.h"
+
+  export *
+  module * { export * }
+}

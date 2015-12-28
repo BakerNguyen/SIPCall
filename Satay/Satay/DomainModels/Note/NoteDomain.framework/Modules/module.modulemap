@@ -1,0 +1,6 @@
+framework module NoteDomain {
+  umbrella header "NoteDomain.h"
+
+  export *
+  module * { export * }
+}
